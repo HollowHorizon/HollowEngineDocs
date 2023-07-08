@@ -1,16 +1,18 @@
-site_name: HollowEngine
+site_name: HollowEngine Wiki
 site_url: https://hollowengine-docs.readthedocs.io
 
 repo_name: HollowHorizon/HollowEngine
 repo_url: https://github.com/HollowHorizon/HollowEngine
 
+docs_dir: docs
+
 nav:
-  - Introduction:
-      - index.md
-      - Getting Started: getting_started.md
+  - Introduction: index.md
+  - Getting Started: getting_started.md
 
 theme:
   name: material
+  language: en
   palette:
     - scheme: slate
       accent: blue
@@ -51,15 +53,6 @@ markdown_extensions:
   - tables
   - toc
 
-# extra:
-#   alternate:
-#     - name: English
-#       link: /en/ 
-#       lang: en
-#     - name: Русский
-#       link: /ru/
-#       lang: ru
-
 plugins:
     - search
     - i18n:
@@ -73,6 +66,7 @@ plugins:
               ru:
                   name: Русский
                   build: true
+                  site_name: "HollowEngine Вики"
 
 extra_css:
   - stylesheets/extra.css
