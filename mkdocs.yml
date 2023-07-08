@@ -73,9 +73,6 @@ plugins:
               ru:
                   name: Русский
                   build: true
-          nav_translations:
-              ru:
-                  Introduction: Введение
 
 extra_css:
   - stylesheets/extra.css
