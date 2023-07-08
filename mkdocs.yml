@@ -10,7 +10,6 @@ nav:
 
 theme:
   name: material
-  language: en
   palette:
     - scheme: slate
       accent: blue
@@ -51,20 +50,31 @@ markdown_extensions:
   - tables
   - toc
 
-extra:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
-    - name: Русский
-      link: /ru/
-      lang: ru
+# extra:
+#   alternate:
+#     - name: English
+#       link: /en/ 
+#       lang: en
+#     - name: Русский
+#       link: /ru/
+#       lang: ru
 
 plugins:
-  - i18n:
-      default_language: en
-      languages:
-        ru: Русский
+    - search
+    - i18n:
+          default_language: en
+          default_language_only: false
+          docs_structure: folder
+          languages:
+              en:
+                  name: English
+                  build: true
+              ru:
+                  name: Русский
+                  build: true
+          nav_translations:
+              ru:
+                  Introduction: Введение
 
 extra_css:
   - stylesheets/extra.css
