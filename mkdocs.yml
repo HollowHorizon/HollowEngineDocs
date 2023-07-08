@@ -66,6 +66,9 @@ plugins:
           default_language_only: false
           docs_structure: folder
           languages:
+              default:
+                  name: Default (en)
+                  build: true
               en:
                   name: English
                   build: true
