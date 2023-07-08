@@ -12,7 +12,7 @@ theme:
   name: material
   palette:
     - scheme: slate
-      accent: purple
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -49,6 +49,15 @@ markdown_extensions:
   - footnotes
   - tables
   - toc
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Русский
+      link: /ru/
+      lang: ru
 
 extra_css:
   - stylesheets/extra.css
