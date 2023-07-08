@@ -10,6 +10,7 @@ nav:
 
 theme:
   name: material
+  language: en
   palette:
     - scheme: slate
       accent: blue
@@ -58,6 +59,12 @@ extra:
     - name: Русский
       link: /ru/
       lang: ru
+
+plugins:
+  - i18n:
+      default_language: en
+      languages:
+        ru: Русский
 
 extra_css:
   - stylesheets/extra.css
