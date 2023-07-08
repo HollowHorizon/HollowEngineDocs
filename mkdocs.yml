@@ -72,7 +72,6 @@ plugins:
             ru:
                 Introduction: Введение
                 Scripting: Скрипты
-                    Introduction: Введение
 
 
 extra_css:
