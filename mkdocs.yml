@@ -1,0 +1,54 @@
+site_name: HollowEngine
+
+repo_name: HollowHorizon/HollowEngine
+repo_url: https://github.com/HollowHorizon/HollowEngine
+
+nav:
+  - Introduction:
+      - index.md
+      - Getting Started: getting_started.md
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - def_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc
+
+extra_css:
+  - stylesheets/extra.css
