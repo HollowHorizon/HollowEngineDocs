@@ -8,7 +8,7 @@ docs_dir: docs
 
 nav:
   - Introduction: index.md
-      - Getting Started: index.md
+      - "Getting Started": index.md
   - Scripting: 
       - Introduction: scripting/introduction.md
 
