@@ -8,7 +8,8 @@ docs_dir: docs
 
 nav:
   - Introduction: index.md
-  - Getting Started: getting_started.md
+  - Scripting: 
+      - Introduction: scripting/introduction.md
 
 theme:
   name: material
@@ -67,6 +68,12 @@ plugins:
                   name: Русский
                   build: true
                   site_name: "HollowEngine Вики"
+          nav_translations:
+            ru:
+                Introduction: Введение
+                Scripting: Скрипты
+                    Introduction: Введение
+
 
 extra_css:
   - stylesheets/extra.css
