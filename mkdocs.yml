@@ -8,7 +8,7 @@ docs_dir: docs
 nav:
   - Введение: index.md
   - Скриптинг: 
-      - Оглавление: scripting/introduction.md
+      - Введение: scripting/introduction.md
 
 theme:
   name: material
