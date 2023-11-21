@@ -9,6 +9,7 @@ nav:
   - Введение: index.md
   - Скриптинг: 
       - Введение: scripting/introduction.md
+      - Сюжетные события: scripting/story_events.md
 
 theme:
   name: material
