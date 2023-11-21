@@ -11,7 +11,7 @@ nav:
     - Введение: scripting/introduction.md
     - Сюжетные события: scripting/story_events.md
       - НПС:
-        Создание нпс: scripting/story_events/npcs/creation.md
+        - Создание нпс: scripting/story_events/npcs/creation.md
 
 theme:
   name: material
