@@ -8,8 +8,10 @@ docs_dir: docs
 nav:
   - Введение: index.md
   - Скриптинг: 
-      - Введение: scripting/introduction.md
-      - Сюжетные события: scripting/story_events.md
+    - Введение: scripting/introduction.md
+    - Сюжетные события: scripting/story_events.md
+      - НПС:
+        Создание нпс: scripting/story_events/npcs/creation.md
 
 theme:
   name: material
