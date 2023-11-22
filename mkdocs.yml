@@ -33,6 +33,9 @@ nav:
       - Диалоговая система: 
         - Диалог: hollowengine-guide/Script-SE/Dialogues/dialogue.md
         - хз как назвать: hollowengine-guide/Script-SE/Dialogues/send-message.md
+      - Касцены: 
+        - Камера: hollowengine-guide/Script-SE/Cutscenes/camera.md
+        - Fade In/Out: hollowengine-guide/Script-SE/Cutscenes/fadeInOut-effect.md
 
 theme:
   name: material
