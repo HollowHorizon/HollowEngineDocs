@@ -1,16 +1,12 @@
----
-sidebar_position: 4
----
-
 # Assets
 
-:::info assets
-> Создай новую папку в `hollowengine` с названием `assets`, и в ней же создай новую с названием `hollowengine`.
-> ```sheme
-> hollowengine
-> \- assets
->    \- <modID>
-> ```
+!!!info "assets"
+	> Создай новую папку в `hollowengine` с названием `assets`, и в ней же создай новую с названием `hollowengine`.
+	> ```sheme
+	> hollowengine
+	> \- assets
+	>    \- <modID>
+	> ```
 
 В ней ты уже можешь размещать ресурсы, подобии как в ресурс паках.
 
