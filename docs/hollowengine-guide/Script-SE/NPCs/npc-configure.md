@@ -13,7 +13,8 @@
     ```kotlin
         textures["<texture>"] = "<path/to/new_texture>" // Заменяем текущую текстуру на навую
     ```
-    > Обозначения: 
+
+    - Обозначения: 
     > - `texture` - Имя текстуры, которая сейчас на модели. 
     > - `<path/to/new_texture>` - Путь к новой текстуре. Начинаться должен с `<modID>:`. 
     > - `modID` - `ID` мода. 
@@ -23,7 +24,8 @@
     ```kotlin
         textures["<texture>"] - skin("<nickname>") // Работает только с ОФИЦИАЛЬНЫМИ скинами Mojang. Вводите корректно имя, иначе -> краш
     ```
-    > Обозначения: 
+
+    - Обозначения: 
     > - `texture` - Имя текстуры, которая сейчас на модели. 
     > - `nickname` - Ник игрока, у которого есть лицензия. 
 
@@ -35,8 +37,9 @@
     ```kotlin
         animation[AnimationType.<type>] = "<new_animationName>" // Замена стандартной анимации на новую
     ```
-    > Обозначения: 
-    > - `type` - [Тип анимации](hollowengine-guide/Tools/standartAnimationType.md). 
+    
+    - Обозначения: 
+    > - `type` - [Тип анимации](../Tools/standartAnimationType.md). 
     > - `new_animationName` - Название анимации. 
 
 ---
