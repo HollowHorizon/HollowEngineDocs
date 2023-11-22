@@ -35,7 +35,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: custom1
+    - scheme: default
       accent: red
       toggle:
       icon: material/brightness-7

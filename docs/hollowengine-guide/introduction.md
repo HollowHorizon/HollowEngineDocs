@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Hollow Engine - GUIDE [RU_ONLY]
 
-> ![Виталик приветствует вас](.resourses/Vitalik_Hello.gif) Приветствую тебя путник.
+> ![Виталик приветствует вас](hollowengine-guide/.resourses/Vitalik_Hello.gif) Приветствую тебя путник.
 
 !!! info "Данный гайд"
 	Расскажет как работать с **HollowEngine**.
@@ -14,20 +14,20 @@ sidebar_position: 0
 
 !!! danger "Внимание"
 	был создан для _**новичков, которые не особо следили за развитием мода**_, и является **фанатским творением**.
-![Виталик печатает...](.resourses/Vitalik_Pinding.gif) Данный гайд не является официальным гайдом по HollowEngine. Он 
+![Виталик печатает...](hollowengine-guide/.resourses/Vitalik_Pinding.gif) Данный гайд не является официальным гайдом по HollowEngine. Он 
 
 ---
 
 !!! danger "Если у вас возникли проблемы с данным гайдом"
 	Найдите меня на Дискорд сервере HollowEngine `_BENDY659_ [RU]` и расскажите в чём ваша проблема.
-![Проблемы?](.resourses/Vitalik_Hmm.gif) 
+![Проблемы?](hollowengine-guide/.resourses/Vitalik_Hmm.gif) 
 
 ---
 
 !!! danger "Если вы заметили ошибку, обязательно расскажите мне о ней"
 	 Найдите меня на Дискорд сервере HollowEngine `_BENDY659_ [RU]` и скажите где вы заметили.
 
-![Виталик ищет...](.resourses/Vitalik_Search.gif) 
+![Виталик ищет...](hollowengine-guide/.resourses/Vitalik_Search.gif) 
 
 ---
 
