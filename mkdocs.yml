@@ -14,7 +14,8 @@ nav:
       - НПС:
         - Создание нпс: scripting/story_events/npcs/creation.md
 
-  - Hollow Engine | GUIDE: hollowengine-guide/introduction.md
+  - Hollow Engine | GUIDE: 
+    - hollowengine-guide/introduction.md
     - Начало: 
       - Для работы требуется...: Begin/requeres.md
       - Новые папки: Begin/folders.md
