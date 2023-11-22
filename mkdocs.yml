@@ -22,15 +22,15 @@ nav:
       - Начинаем: hollowengine-guide/Begin/starting.md
       - Типы скриптов: hollowengine-guide/Begin/scripts-type.md
       - Ваши ресурсы: hollowengine-guide/Begin/assets.md
-    - SE-KTS:
-      - NPCs:
+    - SE-KTS: 
+      - NPCs: 
         - Спавн NPC: hollowengine-guide/Script-SE/NPCs/spawn-npc.md
         - Действие для NPC: hollowengine-guide/Script-SE/NPCs/actions-npc.md
         - Анимации NPC: hollowengine-guide/Script-SE/NPCs/animations-npc.md
         - Доп. настройки NPC: hollowengine-guide/Script-SE/NPCs/npc-configure.md
         - Задачи для NPC: hollowengine-guide/Script-SE/NPCs/npc-quest.md
         - Убрать NPC: hollowengine-guide/Script-SE/NPCs/npc-remove.md
-      - Диалоговая система:
+      - Диалоговая система: 
         - Диалог: hollowengine-guide/Script-SE/Dialogues/dialogue.md
         - хз как назвать: hollowengine-guide/Script-SE/Dialogues/send-message.md
 
