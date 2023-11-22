@@ -4,7 +4,7 @@
 
 ```kotlin
 val <npcID> by NPCEntity.creating{
-	settings = NPCSettings("<displayName>", "hollowengine:<path/to/model>.gltf", Attributes(<attributes>), Pair(<float1>, <float2>), <boolean>),
+	settings = NPCSettings("<displayName>", "hollowengine:<path/to/model>.gltf", Attributes(<attributes>), Pair(<float1>, <float2>), <boolean>)
 	location = SpawnLocation("<dimension>", pos(<x>, <y>, <z>), vec(<pitch>, <yaw>))
 }
 ```
