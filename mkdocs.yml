@@ -14,6 +14,15 @@ nav:
       - НПС:
         - Создание нпс: scripting/story_events/npcs/creation.md
 
+  - Hollow Engine | GUIDE: hollowengine-guide/introduction.md
+    accent: red
+    - Начало:
+      - Для работы требуется...: Begin/requeres.md
+      - Новые папки: Begin/folders.md
+      - Начинаем: Begin/starting.md
+      - Типы скриптов: Begin/scripts-type.md
+      - Ваши ресурсы: Begin/assets.md
+
 theme:
   name: material
   palette:
@@ -26,6 +35,13 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    - scheme: default
+        accent: red
+        toggle:
+        icon: material/brightness-7
+        name: Switch to Red Theme
+
+
 
   features:
     - content.code.annotate
