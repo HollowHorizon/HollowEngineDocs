@@ -33,7 +33,7 @@
 
 ### Pos
 
-!!! note NPC посмотрит на указанные координаты | Шаблон
+!!! note "NPC посмотрит на указанные координаты | Шаблон"
 	```kotlin
 	<npcID> lookAtPos { pos(x, y, z) }
 	```
@@ -41,7 +41,7 @@
 
 ### Team
 
-!!! note NPC посмотрит на ближайшего игрока в команде | Шаблон
+!!! note "NPC посмотрит на ближайшего игрока в команде | Шаблон"
 	```kotlin
 	<npcID> lookAtTeam { team }
 	```
@@ -49,7 +49,7 @@
 
 ### Any NPC
 
-!!! note NPC посмотрит на другого NPC | Шаблон
+!!! note "NPC посмотрит на другого NPC | Шаблон"
 	```kotlin
 	<npcID> lookAtEntity { <any_npcID> }
 	```

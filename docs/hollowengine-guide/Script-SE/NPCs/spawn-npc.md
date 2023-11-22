@@ -8,7 +8,8 @@ val <npcID> by NPCEntity.creating{
 	location = SpawnLocation("<dimension>", pos(<x>, <y>, <z>), vec(<pitch>, <yaw>))
 }
 ```
-Обозначения:
+
+- Обозначения:
 > - `npcID` - Уникальный ID для вашего NPC. Через него вы, обращаетесь к конкретному NPC. 
 > - `displayName` - Имя, отображаемое над головой NPC. Как ник у игрока. 
 > - `path/to/model` - Укажите путь до модели. 
@@ -23,7 +24,7 @@ val <npcID> by NPCEntity.creating{
 > - `pos(x, y, z)` - Позиция спавна NPC. 
 > - `vec(pitch, yaw)` - Углы поворота при спавне NPC. 
 
-Необязательные значения:
+- Необязательные значения:
 > - `attributes`. 
 > - `Pair(),` 
 > - `showName`. 
