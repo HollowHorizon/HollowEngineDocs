@@ -24,12 +24,12 @@ nav:
       - Ваши ресурсы: hollowengine-guide/Begin/assets.md
     - SE-KTS:
       - NPC's:
-        - Спавн NPC: hollowengine-guide/Script-SE/spawn-npc.md
-        - Действия для NPC: hollowengine-guide/Script-SE/actions-npc.md
-        - Анимации NPC: hollowengine-guide/Script-SE/animations-npc.md
-        - Доп. настройки NPC: hollowengine-guide/Script-SE/npc-configure.md
-        - Задачи для NPC: hollowengine-guide/Script-SE/npc-quest.md
-        - Убрать NPC: hollowengine-guide/Script-SE/npc-remove.md
+        - Спавн NPC: hollowengine-guide/Script-SE/NPC's/spawn-npc.md
+        - Действие для NPC: hollowengine-guide/Script-SE/NPC's/actions-npc.md
+        - Анимации NPC: hollowengine-guide/Script-SE/NPC's/animations-npc.md
+        - Доп. настройки NPC: hollowengine-guide/Script-SE/NPC's/npc-configure.md
+        - Задачи для NPC: hollowengine-guide/Script-SE/NPC's/npc-quest.md
+        - Убрать NPC: hollowengine-guide/Script-SE/NPC's/npc-remove.md
 
 theme:
   name: material
