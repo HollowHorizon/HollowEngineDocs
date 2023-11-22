@@ -16,7 +16,7 @@ nav:
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
-    - hollowengine-guide/test-hueta.md
+    - какашка: hollowengine-guide/test-hueta.md
     - Начало: 
       - Для работы требуется...: Begin/requeres.md
       - Новые папки: Begin/folders.md
@@ -36,11 +36,11 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: default
-      accent: red
-      toggle:
-      icon: material/brightness-7
-      name: Switch to Red Theme
+    #- scheme: custom1
+    #  accent: red
+    #  toggle:
+    #  icon: material/brightness-7
+    #  name: Switch to Red Theme
 
 
 
