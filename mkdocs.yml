@@ -16,13 +16,13 @@ nav:
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
-    - какашка: hollowengine-guide/test-hueta.md
+    - какашка: hollowengine-guide/aaa/test-hueta.md
     - Начало: 
-      - Для работы требуется...: Begin/requeres.md
-      - Новые папки: Begin/folders.md
-      - Начинаем: Begin/starting.md
-      - Типы скриптов: Begin/scripts-type.md
-      - Ваши ресурсы: Begin/assets.md
+      - Для работы требуется...: hollowengine-guide/Begin/requeres.md
+      - Новые папки: hollowengine-guide/Begin/folders.md
+      - Начинаем: hollowengine-guide/Begin/starting.md
+      - Типы скриптов: hollowengine-guide/Begin/scripts-type.md
+      - Ваши ресурсы: hollowengine-guide/Begin/assets.md
 
 theme:
   name: material
