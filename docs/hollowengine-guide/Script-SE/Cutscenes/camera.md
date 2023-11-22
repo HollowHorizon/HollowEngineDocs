@@ -30,7 +30,7 @@
     >   - `<num>.hour`, - Время в часах.
     >   - Так же вы можете совмещать их, используя `+`, пример: `1.hour + 15.min + 30.sec + 45`.
     > - `interpolation = <interpolations>` - Устанавливает интерполяцию движения. (Проще говоря, ускаряем или замедляет в определённые моменты в    зависимости от выбранной интерполяции).
-    >  - `interpolationType` - [Список интерполяций](../Tools/interpolations)
+    >  - `interpolationType` - [Список интерполяций](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/Tools/interpolations)
     > - `vec(<pitch_start>, <yaw_start>), vec(<pitch_end>, <yaw_end>)` - Устанавливает поворот камеры в начале (`_start`) и в конце (`_end`).
     > - `pos(x, y, z)` - Устанавливает точку позиции. Только с нецелыми числами.
 

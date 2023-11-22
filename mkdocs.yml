@@ -36,6 +36,14 @@ nav:
       - Касцены: 
         - Камера: hollowengine-guide/Script-SE/Cutscenes/camera.md
         - Fade In/Out: hollowengine-guide/Script-SE/Cutscenes/fadeInOut-effect.md
+      - Дополнительно: 
+        - Таймер ожидания: hollowengine-guide/Script-SE/Tools/wait.md
+        - Отобрадение в руке у NPC: hollowengine-guide/Script-SE/Tools/ItemHandVisible.md
+        - Стандартые анимации NPC: hollowengine-guide/Script-SE/Tools/standartAnimationType.md
+        - Интерполяции: hollowengine-guide/Script-SE/Tools/interpolations.md
+    - Прочее: 
+      - unknown.reference.1: hollowengine-guide/Others/event-manager.md
+      - unknow.reference.2: hollowengine-guide/Others/special-dimension.md
 
 theme:
   name: material

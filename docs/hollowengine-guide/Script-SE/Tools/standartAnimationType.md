@@ -1,8 +1,4 @@
----
-sidebar_position: 0
----
-
-# Animations Type
+# Default Animation NPC
 
 > - IDLE
 > - IDLE_SNEAKED
