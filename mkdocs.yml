@@ -43,6 +43,11 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    - scheme: default
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to omg
 
 
 
