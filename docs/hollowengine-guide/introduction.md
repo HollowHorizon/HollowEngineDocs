@@ -1,7 +1,3 @@
----
-sidebar_position: 0
----
-
 # Hollow Engine - GUIDE [RU_ONLY]
 
 > ![Виталик приветствует вас](hollowengine-guide/.resourses/Vitalik_Hello.gif) Приветствую тебя путник.
@@ -14,7 +10,7 @@ sidebar_position: 0
 
 !!! danger "Внимание"
 	был создан для _**новичков, которые не особо следили за развитием мода**_, и является **фанатским творением**.
-![Виталик печатает...](hollowengine-guide/.resourses/Vitalik_Pinding.gif) Данный гайд не является официальным гайдом по HollowEngine. Он 
+![Виталик печатает...](hollowengine-guide/.resourses/Vitalik_Pinding.gif) Данный гайд не является официальным гайдом по HollowEngine.
 
 ---
 
