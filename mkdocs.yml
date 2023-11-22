@@ -36,11 +36,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    #- scheme: custom1
-    #  accent: red
-    #  toggle:
-    #  icon: material/brightness-7
-    #  name: Switch to Red Theme
 
 
 
