@@ -30,6 +30,9 @@ nav:
         - Доп. настройки NPC: hollowengine-guide/Script-SE/NPCs/npc-configure.md
         - Задачи для NPC: hollowengine-guide/Script-SE/NPCs/npc-quest.md
         - Убрать NPC: hollowengine-guide/Script-SE/NPCs/npc-remove.md
+      - Диалоговая система:
+        - Диалог: dialogue.md
+        - хз как назвать: send-message.md
 
 theme:
   name: material
@@ -43,11 +46,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: default
-      accent: red
-      toggle:
-        icon: material/brightness-7
-        name: Switch to omg
 
 
 

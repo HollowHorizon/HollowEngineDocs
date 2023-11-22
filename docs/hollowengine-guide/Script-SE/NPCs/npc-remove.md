@@ -1,7 +1,7 @@
 # Удаление NPC
 
 !!! info "Убрать NPC с мира"
-	```jsx
+	```kotlin
 	<npcID>.despawn()
 	```
 

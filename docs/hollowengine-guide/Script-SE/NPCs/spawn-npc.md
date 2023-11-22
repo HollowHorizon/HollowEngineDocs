@@ -2,7 +2,7 @@
 
 ## Шаблон
 
-```jsx
+```kotlin
 val <npcID> by NPCEntity.creating{
 	settings = NPCSettings("<displayName>", "hollowengine:<path/to/model>.gltf", Attributes(<attributes>), Pair(<float1>, <float2>), <boolean>),
 	location = SpawnLocation("<dimension>", pos(<x>, <y>, <z>), vec(<pitch>, <yaw>))
@@ -35,9 +35,9 @@ val <npcID> by NPCEntity.creating{
 
 !!! info "Для спавна базового NPC, оставь поле `NPCSettings()` - пустым"
     Вот пример, как должен выгдядеть скрипт спавна "Базового NPC":
-    ```jsx
+    ```kotlin
     val npc by NPCEntity.creating{
-        settings()
+        // settings = NPCSettings() - не нужен для Базового NPC
         location = SpawnLocation("minecraft:overworld", pos(0, -58, 0))
     }
     ```
@@ -48,7 +48,7 @@ val <npcID> by NPCEntity.creating{
 ## Кастомный NPC
 
 !!! info "Основым нужно, чтобы ты указал путь к модели"
-    ```jsx
+    ```kotlin
     val npc by NPCEntity.creating{
         settings("Виталик 2", "hollowengine:models/entity/temp2.gltf")
         location = SpawnLocation("minecraft:overworld", pos(0, -58, 0))
@@ -62,7 +62,7 @@ val <npcID> by NPCEntity.creating{
 
 !!! info "Все существующие аттрибуты, вы можете узнать через команду `/attribute`"
     От вас лишь требуется указать, там где `attributes`, это:
-    ```jsx
+    ```kotlin
     Attributes("<attributeName>" to <float>)
     ```
     > Обозначения:
