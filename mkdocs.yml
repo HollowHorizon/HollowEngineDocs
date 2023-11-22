@@ -16,13 +16,20 @@ nav:
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
-    - какашка: hollowengine-guide/aaa/test-hueta.md
     - Начало: 
       - Для работы требуется...: hollowengine-guide/Begin/requeres.md
       - Новые папки: hollowengine-guide/Begin/folders.md
       - Начинаем: hollowengine-guide/Begin/starting.md
       - Типы скриптов: hollowengine-guide/Begin/scripts-type.md
       - Ваши ресурсы: hollowengine-guide/Begin/assets.md
+    - SE-KTS:
+      - NPC's:
+        - Спавн NPC: hollowengine-guide/Script-SE/spawn-npc.md
+        - Действия для NPC: hollowengine-guide/Script-SE/actions-npc.md
+        - Анимации NPC: hollowengine-guide/Script-SE/animations-npc.md
+        - Доп. настройки NPC: hollowengine-guide/Script-SE/npc-configure.md
+        - Задачи для NPC: hollowengine-guide/Script-SE/npc-quest.md
+        - Убрать NPC: hollowengine-guide/Script-SE/npc-remove.md
 
 theme:
   name: material

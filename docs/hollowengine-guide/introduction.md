@@ -1,6 +1,6 @@
 # Hollow Engine - GUIDE [RU_ONLY]
 
-> ![image](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/Vitalik_Hello.gif) Приветствую тебя путник.
+> ![Виталик приветствует](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/Vitalik_Hello.gif) Приветствую тебя путник.
 
 !!! info "Данный гайд"
 	Расскажет как работать с **HollowEngine**.
