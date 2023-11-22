@@ -27,7 +27,8 @@
     ```kotlin
     <npcID>.play {"<animationName>", <playType>, priority = <float>, <speed>}
     ```
-    > Обозначения: 
+    
+    - Обозначения: 
     > - `animationName` - Название анимации в модели. 
     > - `playType` - В каком режиме проигрывать анимацию. [Ниже написано]. 
     > - `priority = <float>` - Приоритет к анимации. 
