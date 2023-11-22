@@ -1,6 +1,7 @@
 # Default Animation NPC
 
 !!! note "Дефолтные анимации у NPC"
+
 	> - IDLE
 	> - IDLE_SNEAKED
 	> - WALK

@@ -1,6 +1,7 @@
 # Assets
 
-!!!info "assets"
+!!! info "assets"
+
 	> Создай новую папку в `hollowengine` с названием `assets`, и в ней же создай новую с названием `hollowengine`.
 	> ```sheme
 	> hollowengine

@@ -16,12 +16,14 @@ nav:
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
+
     - Начало: 
       - Для работы требуется...: hollowengine-guide/Begin/requeres.md
       - Новые папки: hollowengine-guide/Begin/folders.md
       - Начинаем: hollowengine-guide/Begin/starting.md
       - Типы скриптов: hollowengine-guide/Begin/scripts-type.md
       - Ваши ресурсы: hollowengine-guide/Begin/assets.md
+
     - SE-KTS: 
       - NPCs: 
         - Спавн NPC: hollowengine-guide/Script-SE/NPCs/spawn-npc.md
@@ -30,24 +32,37 @@ nav:
         - Доп. настройки NPC: hollowengine-guide/Script-SE/NPCs/npc-configure.md
         - Задачи для NPC: hollowengine-guide/Script-SE/NPCs/npc-quest.md
         - Убрать NPC: hollowengine-guide/Script-SE/NPCs/npc-remove.md
+
       - Диалоговая система: 
         - Диалог: hollowengine-guide/Script-SE/Dialogues/dialogue.md
         - хз как назвать: hollowengine-guide/Script-SE/Dialogues/send-message.md
+
       - Касцены: 
         - Камера: hollowengine-guide/Script-SE/Cutscenes/camera.md
         - Fade In/Out: hollowengine-guide/Script-SE/Cutscenes/fadeInOut-effect.md
+
       - Дополнительно: 
         - Таймер ожидания: hollowengine-guide/Script-SE/Tools/wait.md
         - Отобрадение в руке у NPC: hollowengine-guide/Script-SE/Tools/ItemHandVisible.md
         - Стандартые анимации NPC: hollowengine-guide/Script-SE/Tools/standartAnimationType.md
         - Интерполяции: hollowengine-guide/Script-SE/Tools/interpolations.md
-    - Прочее: 
-      - unknown.reference.1: hollowengine-guide/Others/event-manager.md
-      - unknow.reference.2: hollowengine-guide/Others/special-dimension.md
-    - Дибильные туториалы: 
-      - Туториал-1: hollowengine-guide/Tutorials/tutorial-1.md
-      - Туториал-2: hollowengine-guide/Tutorials/tutorial-2.md
-      - Туториал-3: hollowengine-guide/Tutorials/tutorial-3.md
+
+      - Прочее: 
+        - Менеджер ивентов: hollowengine-guide/Others/event-manager.md
+        - Новое измерение: hollowengine-guide/Others/special-dimension.md
+
+      - Дибильные туториалы: 
+        - Туториал-1: hollowengine-guide/Tutorials/tutorial-1.md
+        - Туториал-2: hollowengine-guide/Tutorials/tutorial-2.md
+        - Туториал-3: hollowengine-guide/Tutorials/tutorial-3.md
+
+    - MOD-KTS:
+      - Ищем информацию: hollowengine-guide/Script-MOD/search-information.md
+      - Новый предмет: hollowengine-guide/Script-MOD/add-newItem.md
+      - Запуск скрипта, при первом заходе в мир: hollowengine-guide/Script-MOD/start-script-enter-to-game.md
+
+    - CONTENT-KTS:
+      - Ищем информацию: hollowengine-guide/Script-CONTENT/search-information.md
 
 theme:
   name: material

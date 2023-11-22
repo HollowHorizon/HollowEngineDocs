@@ -3,6 +3,7 @@
 ## Once
 
 !!! note "Воспроизводит анимацию 1 раз | Шаблон"
+
     ```kotlin
     <npcID> playOnce { "<animationName>" }
     ```
@@ -10,6 +11,7 @@
 ## Looped
 
 !!! note "Воспроизводит анимацию в цикле(бесконечно) | Шаблон"
+
     ```kotlin
     <npcID> playLooped { "<animationName>" }
     ```
@@ -17,6 +19,7 @@
 ## Stop
 
 !!! note "Останавливает воспроизведение анимации | Шаблон"
+
     ```kotlin
     <npcID> stop { <active_animationName> }
     ```
@@ -24,6 +27,7 @@
 ## Animation Setting
 
 !!! note "Настрой воспроизведение анимации детально | Шаблоны"
+
     ```kotlin
     <npcID>.play {"<animationName>", <playType>, priority = <float>, <speed>}
     ```

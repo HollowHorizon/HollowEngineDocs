@@ -3,17 +3,19 @@
 ## Сообщени для команды
 
 !!! info "Сообщение для всех игроков изкоманды"
-```jsx
-team.send {"<text>"}
-```
+
+	```jsx
+	team.send {"<text>"}
+	```
 
 ---
 
 ## Сообщение от игрока
 
 !!! info "Сообщение, от главаря команды"
-```jsx
-team.sendAsPlayer {"<text>"}
-```
+
+	```jsx
+	team.sendAsPlayer {"<text>"}
+	```
 
 ---

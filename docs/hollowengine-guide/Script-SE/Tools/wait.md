@@ -3,10 +3,12 @@
 ## По таймеру
 
 !!! info "Ты можешь поставить ожидание после каждого действия, перед тем, как перейти к следующему"
+
 	```jsx
 	wait{ <time> }
 	```
-	> `time`: 
+
+	- `time`: 
 	> - `<num>` - в тиках. 
 	> - `<num>.sec` - в секундах. 
 	> - `<num>.min` - в минутах. 
@@ -19,9 +21,11 @@
 # По нажатию кнопки
 
 !!! info "Скрипт будет ждать, пока не будет нажата указанная кнопка"
+
 	```jsx
 	keybind { Keybind.<key> }
 	```
-	> `key` - Кнопки на клавиатуре. [Узнать больше...](https://github.com/HollowHorizon/HollowEngine/blob/1.19.2/src/main/java/ru/hollowhorizon/hollowengine/common/util/Keybind.kt)
+	
+	- `key` - Кнопки на клавиатуре. [Узнать больше...](https://github.com/HollowHorizon/HollowEngine/blob/1.19.2/src/main/java/ru/hollowhorizon/hollowengine/common/util/Keybind.kt)
 
 ---
