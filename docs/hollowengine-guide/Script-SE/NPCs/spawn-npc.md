@@ -9,25 +9,24 @@ val <npcID> by NPCEntity.creating{
 }
 ```
 > Обозначения:
-> - `npcID` - Уникальный ID для вашего NPC. Через него вы, обращаетесь к конкретному NPC.
-> - `displayName` - Имя, отображаемое над головой NPC. Как ник у игрока.
-> - `path/to/model` - Укажите путь до модели.
-> - `attributes` - Аттрибуты для NPC, по типу: Здоровье, скорость и т.д.
-> - `Pair(<float1>, <float2>)` - Размер хитбокса NPC.
->   - `float1` - Ширина.
->   - `float2` - Высота.
-> - `<boolean>` - Отображение `displayName` над головой NPC.
-    - `false` - не отображать,
-    - `true` - отображать.
-> - `dimension` - Измерение, в котором будет спавниться NPC. Указывать надо сначала с `modID`, пример: `minecraft:overworld`.
-> - `pos(x, y, z)` - Позиция спавна NPC.
-> - `vec(pitch, yaw)` - Углы поворота при спавне NPC.
+> - `npcID` - Уникальный ID для вашего NPC. Через него вы, обращаетесь к конкретному NPC. 
+> - `displayName` - Имя, отображаемое над головой NPC. Как ник у игрока. 
+> - `path/to/model` - Укажите путь до модели. 
+> - `attributes` - Аттрибуты для NPC, по типу: Здоровье, скорость и т.д. 
+> - `Pair(<float1>, <float2>)` - Размер хитбокса NPC. 
+>   - `float1` - Ширина. 
+>   - `float2` - Высота. 
+> - `<boolean>` - Отображение `displayName` над головой NPC. 
+    - `false` - не отображать, 
+    - `true` - отображать. 
+> - `dimension` - Измерение, в котором будет спавниться NPC. Указывать надо сначала с `modID`, пример: `minecraft:overworld`. 
+> - `pos(x, y, z)` - Позиция спавна NPC. 
+> - `vec(pitch, yaw)` - Углы поворота при спавне NPC. 
 
 Необязательные значения:
-> - `attributes`.
-> - `Pair(),`
-> - `showName`.
-:::
+> - `attributes`. 
+> - `Pair(),` 
+> - `showName`. 
 
 ---
 
@@ -65,8 +64,8 @@ val <npcID> by NPCEntity.creating{
     ```kotlin
     Attributes("<attributeName>" to <float>)
     ```
-    > Обозначения:
-    > - `attributeName` - название аттрибута.
+    > Обозначения: 
+    > - `attributeName` - название аттрибута. 
     > - `float` - Число/Цифра, где в конце стоит `f`, пример: `10f`
 
 ---

@@ -15,9 +15,9 @@
 ### Действия
 
 !!! info "Есть на данный момент эти действия"
-    > - `<npcID> say "<text>"` - Слова от лица указанного NPC.
-    > - [Анимации NPC](../NPCs/actions-npc).
-    > - `team.send { "<text>" }` - Слова от лица главоря команды.
+    > - `<npcID> say "<text>"` - Слова от лица указанного NPC. 
+    > - [Анимации NPC](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/NPCs/actions-npc). 
+    > - `team.send { "<text>" }` - Слова от лица главоря команды. 
 
 ---
 

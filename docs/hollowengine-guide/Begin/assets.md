@@ -15,8 +15,8 @@
 ## Models resourses
 
 > Хранить ресурсы вы можете где и как хотите. Но для новичков рекомендую хранить в этих местах:
-> `<modID>/models/entity/*` - Модели,
-> `<modID>/textures/entity` - Текстуры к моделям.
+> - `<modID>/models/entity/*` - Модели,
+> - `<modID>/textures/entity` - Текстуры к моделям.
 
 ---
 

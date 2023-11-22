@@ -27,17 +27,17 @@
     ```kotlin
     <npcID>.play {"<animationName>", <playType>, priority = <float>, <speed>}
     ```
-    > Обозначения:
-    > - `animationName` - Название анимации в модели.
-    > - `playType` - В каком режиме проигрывать анимацию. [Ниже написано].
-    > - `priority = <float>` - Приоритет к анимации.
-    > - `speed` - Скорость анимации.
+    > Обозначения: 
+    > - `animationName` - Название анимации в модели. 
+    > - `playType` - В каком режиме проигрывать анимацию. [Ниже написано]. 
+    > - `priority = <float>` - Приоритет к анимации. 
+    > - `speed` - Скорость анимации. 
 
 ### PlayTypes
 
-> - playType = PlayType.ONCE | Воспроизводит 1 раз
-> - plaType = PlayType.LOOPED | Воспроизводит в цикле(бесконечно)
-> - playType = PlayType.LAST_FRAME | Воспроизводит 1 раз, после застывает на последнем кадре
-> - playType = PlayType.REVERSED | Воспроизводит сначала в одну сторону(вперёд), после в другую(назад) 1 раз
+> - playType = PlayType.ONCE | Воспроизводит 1 раз. 
+> - plaType = PlayType.LOOPED | Воспроизводит в цикле(бесконечно). 
+> - playType = PlayType.LAST_FRAME | Воспроизводит 1 раз, после застывает на последнем кадре. 
+> - playType = PlayType.REVERSED | Воспроизводит сначала в одну сторону(вперёд), после в другую(назад) 1 раз. 
 
 ---
