@@ -47,6 +47,7 @@ nav:
     - Дибильные туториалы: 
       - Туториал-1: hollowengine-guide/Tutorials/tutorial-1.md
       - Туториал-2: hollowengine-guide/Tutorials/tutorial-2.md
+      - Туториал-3: hollowengine-guide/Tutorials/tutorial-3.md
 
 theme:
   name: material

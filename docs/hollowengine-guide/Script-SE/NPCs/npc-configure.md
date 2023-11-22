@@ -36,7 +36,7 @@
         animation[AnimationType.<type>] = "<new_animationName>" // Замена стандартной анимации на новую
     ```
     > Обозначения: 
-    > - `type` - [Тип анимации](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/Tools/standartAnimationType). 
+    > - `type` - [Тип анимации](hollowengine-guide/Tools/standartAnimationType.md). 
     > - `new_animationName` - Название анимации. 
 
 ---
