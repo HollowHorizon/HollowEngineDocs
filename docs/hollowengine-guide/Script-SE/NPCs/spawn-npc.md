@@ -6,20 +6,20 @@
 
     ```kotlin
     val <npcID> by NPCEntity.creating{
-    	settings = NPCSettings("<displayName>", "hollowengine:<path/to/model>.gltf",   Attributes(<attributes>), Pair(<float1>, <float2>), <boolean>)
+    	settings = NPCSettings("<nick>", "<model>",   <attributes>, <hitboxSize>, <showMick>)
     	location = SpawnLocation("<dimension>", pos(<x>, <y>, <z>), vec(<pitch>, <yaw>))
     }
     ```
     
     - Обозначения:
     > - `npcID` - Уникальный ID для вашего NPC. Через него вы, обращаетесь к конкретному NPC. 
-    > - `displayName` - Имя, отображаемое над головой NPC. Как ник у игрока. 
-    > - `path/to/model` - Укажите путь до модели. 
+    > - `nick` - Имя NPC.  
+    > - `model` - Укажите путь до модели. Путь должен начинаться с `modID:`
     > - `attributes` - Аттрибуты для NPC, по типу: Здоровье, скорость и т.д. 
-    > - `Pair(<float1>, <float2>)` - Размер хитбокса NPC. 
+    > - `size` - Размер хитбокса NPC -> `Pair(float1, float2)`
     >   - `float1` - Ширина. 
     >   - `float2` - Высота. 
-    > - `<boolean>` - Отображение `displayName` над головой NPC. 
+    > - `showNick` - Отображение `displayName` над головой NPC. 
     >   - `false` - не отображать, 
     >   - `true` - отображать. 
     > - `dimension` - Измерение, в котором будет спавниться NPC. Указывать надо сначала с `modID`, пример: `    minecraft:overworld`. 
@@ -29,7 +29,7 @@
     - Необязательные значения:
     > - `attributes`. 
     > - `Pair(),` 
-    > - `showName`. 
+    > - `showNick`. 
 
 ---
 
