@@ -20,13 +20,15 @@
 	```
 
 
-### Any NPC
+### Entity или NPC
 
 !!! note "NPC будет двигать до другого NPC | Шаблон"
 
 	```kotlin
-	<npcID> movdToEntity { <any_npcID> }
+	<npcID> movdToEntity { <entity> }
 	```
+	> Поняние:
+	> - Если вам нужно указать другого NPC - Указывайте без `{...}`. Если же это сущность - то только в `{...}`.
 
 ![NPC движется до точки](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-move.gif)
 
@@ -52,13 +54,15 @@
 	```
 
 
-### Any NPC
+### Entity или NPC
 
 !!! note "NPC посмотрит на другого NPC | Шаблон"
 
 	```kotlin
-	<npcID> lookAtEntity { <any_npcID> }
+	<npcID> lookAtEntity { <entity> }
 	```
+	> Поняние:
+	> - Если вам нужно указать другого NPC - Указывайте без `{...}`. Если же это сущность - то только в `{...}`.
 
 
 ![NPC смотрить в точку](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-look.gif)
