@@ -18,7 +18,7 @@
 
 ---
 
-# По нажатию кнопки
+## По нажатию кнопки
 
 !!! info "Скрипт будет ждать, пока не будет нажата указанная кнопка"
 
@@ -27,5 +27,15 @@
 	```
 	
 	- `key` - Кнопки на клавиатуре. [Узнать больше...](https://github.com/HollowHorizon/HollowEngine/blob/1.19.2/src/main/java/ru/hollowhorizon/hollowengine/common/util/Keybind.kt)
+
+---
+
+## По интерактиву
+
+!!! info "Скрипт будет ждать, пока ты не повзаимодействуешь с определённым NPC"
+
+	```kotlin
+	<npcID>.waitInteract()
+	```
 
 ---
