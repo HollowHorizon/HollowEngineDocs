@@ -13,7 +13,7 @@
 !!! note "Установить новую текстуру"
 
     ```kotlin
-        textures["<texture>"] = "<path/to/new_texture>" // Заменяем текущую текстуру на навую
+        textures["<texture>"] = "<path/to/new_texture>" // Заменяем текущую текстуру на новую
     ```
 
     - Обозначения: 
