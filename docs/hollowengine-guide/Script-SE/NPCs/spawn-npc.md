@@ -55,7 +55,7 @@
 
     ```kotlin
     val npc by NPCEntity.creating{
-        settings("Виталик 2", "hollowengine:models/entity/temp2.gltf")
+        settings = NPCSettings("Виталик 2", "hollowengine:models/entity/temp2.gltf")
         location = SpawnLocation("minecraft:overworld", pos(0, -58, 0))
     }
     ```
