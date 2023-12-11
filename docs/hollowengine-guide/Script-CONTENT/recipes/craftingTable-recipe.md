@@ -56,13 +56,13 @@
 
 ### По Json файлу
 
-!!! info "\<invalid_name\=\"addByJson\"\>"
+!!! info "<invalid_name="addByJson">"
 
 	```kts
 	addFromJson(<newRecipeName>, <newRecipeData>) // Пока ничего неизвестно
 	```
 
-	\<invalid_description\=\"addByJson.desc\"\>
+	<invalid_description="addByJson.desc">
 
 ---
 
@@ -71,19 +71,19 @@
 !!! info "Шаблон"
 
 	```kts
-	CraftingTable.replaceShaped("\[itemID_Output\]", <count>) {
+	CraftingTable.replaceShaped("[itemID_Output]", <count>) {
 		grid ( // Сетка крафта
-			"\[\]\[\]\[\]",
-			"\[\]\[\]\[\]";
-			"\[\]\[\]\[\]" // [] - это слот в сетке
+			"[][][]",
+			"[][][]";
+			"[][][]" // [] - это слот в сетке
 		)
 
 		where {
-			'\[<key>\]' = \[<itemID_Input>\]
+			'[<key>]' = [<itemID_Input>]
 			// И так, скоклько типо [key] указано в [grid] 
 		}
 
-		extra\["<inknown_1>"\] = "<inknown_2>" // Пока не знаю что это
+		extra["<inknown_1>"] = "<inknown_2>" // Пока не знаю что это
 	}
 	```
 
