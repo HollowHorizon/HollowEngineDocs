@@ -62,6 +62,12 @@ nav:
       - Запуск скрипта, при первом заходе в мир: hollowengine-guide/Script-MOD/start-script-enter-to-game.md
 
     - CONTENT-KTS:
+      - Крафты:
+        - Верстак: hollowengine-guide/Script-CONTENT/recipes/craftingTable-recipe.md
+        - Печь: hollowengine-guide/Script-CONTENT/recipes/furnace-recipe.md
+        - Плавильня: hollowengine-guide/Script-CONTENT/recipes/blastFurnace-recipe.md
+        - Коптильня: hollowengine-guide/Script-CONTENT/recipes/smoker-recipe.md
+        - Костёр: hollowengine-guide/Script-CONTENT/recipes/campFire-recipe.md
       - Ищем информацию: hollowengine-guide/Script-CONTENT/search-information.md
 
 theme:
