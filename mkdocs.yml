@@ -11,8 +11,9 @@ nav:
     - Введение: scripting/introduction.md
     - Сюжетные события: 
       - scripting/story_events.md
-      - НПС:
-        - Создание нпс: scripting/story_events/npcs/creation.md
+      - Персонажи:
+        - Создание персонажа: scripting/story_events/npcs/creation.md
+        - Перемещение и направление взгляда персонажа: scripting/story_events/npcs/moving.md
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
