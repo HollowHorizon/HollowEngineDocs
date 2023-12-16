@@ -6,12 +6,12 @@
 //Здесь мы создаём переменную-делегат, через которую будем обращаться к нашему персонажу. Сам нпс будет заспавлен сразу же как будет вызван этот участок кода.
 val npc by NPCEntity.creating {
     name = "Виталик", //Имя персонажа
-    model = "hollowengine:models/entity/player_model.gltf",//Путь к модели персонажа
+    model = "hollowengine:models/entity/player_model.gltf" //Путь к модели персонажа
     attributes = Attributes( //список атрибутов персонажа (здоровье, скорость и т.п.) - всё как в команде /attribute
       "minecraft:generic.max_health" to 100f, //к примеру здоровье
-    ),
-    size = 0.6f to 0.8f, //размеры хитбокса нпс (в разработке)
-    showName = true, //показывать ли ник с именем над нпс
+    )
+    size = 0.6f to 0.8f //размеры хитбокса нпс (в разработке)
+    showName = true //показывать ли ник с именем над нпс
     
     world = "minecraft:overworld" //измерение, гле спавнить нпс
     pos = pos(1, 2, 3) //координаты где спавнить нпс
