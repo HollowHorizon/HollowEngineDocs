@@ -4,45 +4,34 @@
 
 !!! info "Шаблон для спавна NPC"
 
+    Этот шаблон вкл в себя все параметры, которые поддерживаются при создании НПС:
+
     ```kotlin
     val <npcID> by NPCEntity.creating{
-    	settings = NPCSettings("<nick>", "<model>",   <attributes>, <hitboxSize>, <showMick>)
-    	location = SpawnLocation("<dimension>", pos(<x>, <y>, <z>), vec(<pitch>, <yaw>))
+    	name = "<text>" // Ник НПС
+        model = "<path/to/model>" // Путь до модели. В начале пишется modID, а после уже сам путь
+        Attributes("<attribute>" to <float>) // Атрибуты
+        size = <width> to <height> // Размер хитбокса
+        showName = <false/true> // Отображение Ника НПС над его головой
+        transform = Transform{} // Изменить Отображение модели по: Смещение, поворот, размер
+        animation[AnimationType.<defaultAnimationID>] = "<newAnimationName>" // Замена дефолтной анимации на свою(кастомную, другую)
+        world = "<worldID>" // Измерение спанва
+        pos = pos(<x>, <y>, <z>) // Пизиция спавна. Либо все значения это int, либо все значения это double
+        rotation = vec(<pitch>, <yaw>) // Поворот головы
     }
     ```
-    
-    - Обозначения:
-    > - `npcID` - Уникальный ID для вашего NPC. Через него вы, обращаетесь к конкретному NPC. 
-    > - `nick` - Имя NPC.  
-    > - `model` - Укажите путь до модели. Путь должен начинаться с `modID:`
-    > - `attributes` - Аттрибуты для NPC, по типу: Здоровье, скорость и т.д. 
-    > - `size` - Размер хитбокса NPC -> `Pair(float1, float2)`
-    >   - `float1` - Ширина. 
-    >   - `float2` - Высота. 
-    > - `showNick` - Отображение `displayName` над головой NPC. 
-    >   - `false` - не отображать, 
-    >   - `true` - отображать. 
-    > - `dimension` - Измерение, в котором будет спавниться NPC. Указывать надо сначала с `modID`, пример: `    minecraft:overworld`. 
-    > - `pos(x, y, z)` - Позиция спавна NPC. 
-    > - `vec(pitch, yaw)` - Углы поворота при спавне NPC. 
-
-    - Необязательные значения:
-    > - `attributes`. 
-    > - `Pair(),` 
-    > - `showNick`. 
 
 ---
 
 ## Базовый NPC
 
-!!! info "Для спавна базового NPC, оставь поле `NPCSettings()` - пустым"
+!!! info "Для спавна базового NPC, укажите максимум только кноординаты спавна"
 
     Вот пример, как должен выгдядеть скрипт спавна "Базового NPC":
 
     ```kotlin
     val npc by NPCEntity.creating{
-        // settings = NPCSettings() - не нужен для Базового NPC
-        location = SpawnLocation("minecraft:overworld", pos(0, -58, 0))
+        pos = pos(0, -57, 0) // Если будет pos(<int>, <double>, <int>) - работать не будет
     }
     ```
 ![Спавн базового NPC](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/spawn-basic-npc.gif)
@@ -51,12 +40,13 @@
 
 ## Кастомный NPC
 
-!!! info "Основым нужно, чтобы ты указал путь к модели"
+!!! info "Основым нужно, чтобы ты, как минимум, указан имя НПС, путь к модели и при необходимости путь к текстуре для модели"
 
     ```kotlin
     val npc by NPCEntity.creating{
-        settings = NPCSettings("Виталик 2", "hollowengine:models/entity/temp2.gltf")
-        location = SpawnLocation("minecraft:overworld", pos(0, -58, 0))
+        name = "Вася"
+        model = "hollowengine:/template/better_temp.gltf"
+        textures["better_texture"] = "textures:character/human_1.png"
     }
     ```
 ![Спавн кастомного NPC](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/spawn-custom-npc.gif)
@@ -65,7 +55,7 @@
 
 ### Аттрибуты
 
-!!! info "Все существующие аттрибуты, вы можете узнать через команду `/attribute`"
+!!! info "Все существующие аттрибуты, вы можете узнать через команду `/attribute <кому>`"
 
     От вас лишь требуется указать, там где `attributes`, это:
     

@@ -29,20 +29,18 @@
 !!! note "Настрой воспроизведение анимации детально | Шаблоны"
 
     ```kotlin
-    <npcID>.play {"<animationName>", <playType>, priority = <float>, <speed>}
-    ```
-    
-    - Обозначения: 
-    > - `animationName` - Название анимации в модели. 
-    > - `playType` - В каком режиме проигрывать анимацию. [Ниже написано]. 
-    > - `priority = <float>` - Приоритет к анимации. 
-    > - `speed` - Скорость анимации. 
-
-### PlayTypes
-
-> - playType = PlayType.ONCE | Воспроизводит 1 раз. 
-> - plaType = PlayType.LOOPED | Воспроизводит в цикле(бесконечно). 
-> - playType = PlayType.LAST_FRAME | Воспроизводит 1 раз, после застывает на последнем кадре. 
-> - playType = PlayType.REVERSED | Воспроизводит сначала в одну сторону(вперёд), после в другую(назад) 1 раз. 
+    <npcID>.play {
+        animation = "<animationName>" // Название анимации
+        layerMode = LayerMode.<modeType> // Режим проигрывания. Есть:
+        // - LayerMode.ADD - Умножить
+        // - LayerMode.OVERWRITE - Перезаписать
+        playType = PlayMode.<playType> // Как проигрывать анимацию. Есть:
+        // - PlayMode.ONCE - 1 раз
+        // - PlayType.LOOPED - в цикле
+        // - PlayTyp.LAST_FRAME - Зависнуть на последнем кадре
+        // - PlayMode.REVERSED - в цикле вперёд и обратно
+        speed = <float> // Скорость анимации
+    }
+    ``` 
 
 ---
