@@ -10,6 +10,7 @@
     val <npcID> by NPCEntity.creating{
     	name = "<text>" // Ник НПС
         model = "<path/to/model>" // Путь до модели. В начале пишется modID, а после уже сам путь
+        textures["<texture>"] = "<path/to/new_texture>" // Устанавливает текстуру для НПС
         Attributes("<attribute>" to <float>) // Атрибуты
         size = <width> to <height> // Размер хитбокса
         showName = <false/true> // Отображение Ника НПС над его головой
@@ -63,7 +64,7 @@
     Attributes("<attributeName>" to <float>)
     ```
     > Обозначения: 
-    > - `attributeName` - название аттрибута. 
+    > - `attributeName` - название аттрибута.  
     > - `float` - Число/Цифра, где в конце стоит `f`, пример: `10f`
 
 ---
