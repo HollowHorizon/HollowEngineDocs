@@ -44,7 +44,7 @@ nav:
 
       - Дополнительно: 
         - Таймер ожидания: hollowengine-guide/Script-SE/Tools/wait.md
-        - Отобрадение в руке у NPC: hollowengine-guide/Script-SE/Tools/ItemHandVisible.md
+        - Отображение в руке у NPC: hollowengine-guide/Script-SE/Tools/ItemHandVisible.md
         - Стандартые анимации NPC: hollowengine-guide/Script-SE/Tools/standartAnimationType.md
         - Интерполяции: hollowengine-guide/Script-SE/Tools/interpolations.md
 
