@@ -41,7 +41,7 @@
 !!! info "Шаблон"
 
 	```kts
-	removeById("[<recipeID>]") // Удаляется конкретный [recipeID]
+	removeById("[<recipeID>]") // Удаляется рецепт по ID рецепта
 	```
 
 	Пример:

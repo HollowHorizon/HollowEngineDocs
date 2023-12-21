@@ -36,8 +36,8 @@
         // - LayerMode.OVERWRITE - Перезаписать
         playType = PlayMode.<playType> // Как проигрывать анимацию. Есть:
         // - PlayMode.ONCE - 1 раз
-        // - PlayType.LOOPED - в цикле
-        // - PlayTyp.LAST_FRAME - Зависнуть на последнем кадре
+        // - PlayMode.LOOPED - в цикле
+        // - PlayMode.LAST_FRAME - Зависнуть на последнем кадре
         // - PlayMode.REVERSED - в цикле вперёд и обратно
         speed = <float> // Скорость анимации
     }

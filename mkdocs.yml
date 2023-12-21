@@ -36,7 +36,7 @@ nav:
 
       - Диалоговая система: 
         - Диалог: hollowengine-guide/Script-SE/Dialogues/dialogue.md
-        - хз как назвать: hollowengine-guide/Script-SE/Dialogues/send-message.md
+        - Команда: hollowengine-guide/Script-SE/Dialogues/send-message.md
 
       - Касцены: 
         - Камера: hollowengine-guide/Script-SE/Cutscenes/camera.md
