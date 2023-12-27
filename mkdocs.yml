@@ -15,6 +15,7 @@ nav:
         - Создание персонажа: scripting/story_events/npcs/creation.md
         - Перемещение и направление взгляда персонажа: scripting/story_events/npcs/moving.md
         - Возможности персонажей: scripting/story_events/npcs/capabilities.md
+        - Анимирование персонажей: scripting/story_events/npcs/animations.md
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
