@@ -7,12 +7,15 @@
 val npc by NPCEntity.creating {
     name = "Виталик" //Имя персонажа
     model = "hollowengine:models/entity/player_model.gltf" //Путь к модели персонажа
-    attributes = Attributes( //список атрибутов персонажа (здоровье, скорость и т.п.) - всё как в команде /attribute
+    data = Attributes( //список атрибутов персонажа (здоровье, скорость и т.п.) - всё как в команде /attribute
       "minecraft:generic.max_health" to 100f, //к примеру здоровье
     )
     size = 0.6f to 0.8f //размеры хитбокса нпс (в разработке)
     showName = true //показывать ли ник с именем над нпс
-    
+    transform = Transform( //Начальные параметры модели: перемещение, поворот и масштаб
+      tX=1.5f //сдвинем нашу модель на 1.5 блока по x.
+    )
+    animation[AnimationType.IDLE] = "<newAnimationName>" // Замена стандартной анимации на свою (по умолчанию движок сам определяет стандартные анимации)
     world = "minecraft:overworld" //измерение, гле спавнить нпс
     pos = pos(x, y, z) //координаты где спавнить нпс
 }
