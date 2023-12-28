@@ -6,7 +6,8 @@ repo_url: https://github.com/HollowHorizon/HollowEngine
 docs_dir: docs
 
 nav:
-  - Введение: index.md
+  - Введение: 
+    - index.md
     - Установка: install.md
   - Скриптинг: 
     - Введение: scripting/introduction.md
