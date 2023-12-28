@@ -15,6 +15,7 @@ nav:
       - scripting/story_events.md
       - Персонажи:
         - Создание персонажа: scripting/story_events/npcs/creation.md
+        - Настройка персонажа: scripting/story_events/npcs/settings.md
         - Перемещение и направление взгляда персонажа: scripting/story_events/npcs/moving.md
         - Возможности персонажей: scripting/story_events/npcs/capabilities.md
         - Анимирование персонажей: scripting/story_events/npcs/animations.md
