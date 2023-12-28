@@ -28,7 +28,7 @@
 !!! note "Останавливает воспроизведение зацикленную анимацию | Шаблон"
 
     ```kotlin
-    <npcID> stop { <active_animationName> }
+    npc stop { "animationName" }
     ```
 
 ## Настройка анимаций
