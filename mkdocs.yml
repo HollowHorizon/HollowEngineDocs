@@ -13,6 +13,11 @@ nav:
     - Введение: scripting/introduction.md
     - Сюжетные события: 
       - scripting/story_events.md
+      - Действия:
+        - Таймеры и ожидания: scripting/story_events/actions/waiters.md
+        - Условия и ветвления: scripting/story_events/actions/conditions.md
+        - Циклы: scripting/story_events/actions/loops.md
+        - Асинхронные события: scripting/story_events/actions/async.md
       - Персонажи:
         - Создание персонажа: scripting/story_events/npcs/creation.md
         - Настройка персонажа: scripting/story_events/npcs/settings.md
@@ -27,7 +32,7 @@ nav:
     - Загрузчик ресурсов: features/resources.md
     - Измерение рассказчика: features/dimension.md
 
-  - Hollow Engine | GUIDE: 
+  - Hollow Engine | Unofficial Guide: 
     - hollowengine-guide/introduction.md
 
     - Начало: 
