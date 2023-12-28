@@ -13,4 +13,4 @@
     	)
 	}
 	```
-	Путь к модели указывается, в формате [ResourceLocation](../../../features/resources).
+	Путь к модели указывается, в формате [ResourceLocation](../../../../features/resources).
