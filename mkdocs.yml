@@ -21,6 +21,8 @@ nav:
         - Анимирование персонажей: scripting/story_events/npcs/animations.md
       - Окно диалога:
         - Базовые возможности: scripting/story_events/dialogues/features.md
+      - Список Событий:
+        - scripting/story_events/event_list/event_list.md
   - Возможности:
     - Загрузчик ресурсов: features/resources.md
 
