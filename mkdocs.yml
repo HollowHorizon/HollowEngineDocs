@@ -25,6 +25,7 @@ nav:
         - scripting/story_events/event_list/event_list.md
   - Возможности:
     - Загрузчик ресурсов: features/resources.md
+    - Измерение рассказчика: features/dimension.md
 
   - Hollow Engine | GUIDE: 
     - hollowengine-guide/introduction.md
