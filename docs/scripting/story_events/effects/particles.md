@@ -21,9 +21,9 @@ particles {
 
 ### Случайное направление
 
-- `randomMotion(xSpeed: Float, ySpeed: Float, zSpeed: Float)` - случайное направление по трём осям.
-- `randomMotion(horizontalSpeed: Float, verticalSpeed: Float)` - случайное направление по горизонтали и вертикали.
-- `randomMotion(speed: Float)` - случайное направление сразу по трём осям координат.
+- `randomMotion(xSpeed: Double, ySpeed: Double, zSpeed: Double)` - случайное направление по трём осям.
+- `randomMotion(horizontalSpeed: Double, verticalSpeed: Double)` - случайное направление по горизонтали и вертикали.
+- `randomMotion(speed: Double)` - случайное направление сразу по трём осям координат.
 
 ### Случайное смещение
 
@@ -92,7 +92,7 @@ particles {
     particle = "hc:star"
     settings {
         randomOffset(0.05, 0.05) // Случайное смещение
-        randomMotion(0.05f) // Случайное направление движения
+        randomMotion(0.05) // Случайное направление движения
         lifetime = 100 // Время жизни одной частицы
         gravity = 0.1f // Гравитация частицы
 
