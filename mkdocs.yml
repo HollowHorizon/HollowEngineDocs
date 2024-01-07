@@ -28,6 +28,8 @@ nav:
               - Время: scripting/story_events/world/time.md
           - Окно диалога:
               - Базовые возможности: scripting/story_events/dialogues/features.md
+          - Катсцены:
+              - Камера: scripting/story_events/cutscenes/camera.md
           - Список Событий:
               - scripting/story_events/event_list/event_list.md
           - Эффекты:
