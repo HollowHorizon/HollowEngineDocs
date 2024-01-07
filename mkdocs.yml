@@ -24,6 +24,8 @@ nav:
               - Перемещение и направление взгляда персонажа: scripting/story_events/npcs/moving.md
               - Возможности персонажей: scripting/story_events/npcs/capabilities.md
               - Анимирование персонажей: scripting/story_events/npcs/animations.md
+          - Мир:
+              - Время: scripting/story_events/world/time.md
           - Окно диалога:
               - Базовые возможности: scripting/story_events/dialogues/features.md
           - Список Событий:
