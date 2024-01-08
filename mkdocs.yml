@@ -34,6 +34,8 @@ nav:
               - scripting/story_events/event_list/event_list.md
           - Эффекты:
               - Частицы: scripting/story_events/effects/particles.md
+      - Общее:
+          - Импорт скриптов: scripting/common/imports.md
   - Возможности:
       - Загрузчик ресурсов: features/resources.md
       - Измерение рассказчика: features/dimension.md
