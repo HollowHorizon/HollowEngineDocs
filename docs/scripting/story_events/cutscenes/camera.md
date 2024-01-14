@@ -19,4 +19,4 @@ camera {
 }
 ```
 
-Все виды интерполяций есть [тут](https://github.com/HollowHorizon/HollowCore/blob/1.19.2/src/main/java/ru/hollowhorizon/hc/client/utils/math/Interpolation.kt).
+Все виды интерполяций есть [тут](../../common/util/interpolations).

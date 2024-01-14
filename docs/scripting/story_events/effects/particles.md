@@ -37,15 +37,15 @@ particles {
 - `spin(startValue: Float, middleValue: Float, endValue: Float)` - аналогично, но с 3 значениями.
 
 Параметры по имени
-- `startToMiddleEasing = Interpolation.LINEAR` - интерполяция от начала к середине поворота.
-- `middleToEndEasing = Interpolation.LINEAR` - интерполяция от середины к концу поворота.
+- `startToMiddleEasing = Interpolation.LINEAR` - [интерполяция](../../common/util/interpolations) от начала к середине поворота.
+- `middleToEndEasing = Interpolation.LINEAR` - [интерполяция](../../common/util/interpolations) от середины к концу поворота.
 
 ### Цвет
 
 - `color(r1: Float, g1: Float, b1: Float, r2: Float, g2: Float, b2: Float)` - начальный и конечный цвет частицы, указывается в [процентах RGB](https://keiwando.com/color-picker/) от `0f` до `1f`.
 
 Параметры по имени
-- `colorCurveEasing = Interpolation.LINEAR` - интерполяция от начального цвета к конечному.
+- `colorCurveEasing = Interpolation.LINEAR` - [интерполяция](../../common/util/interpolations) от начального цвета к конечному.
 
 ### Прозрачность
 
@@ -55,8 +55,8 @@ particles {
 - `transparency(startValue: Float, middleValue: Float, endValue: Float)` - аналогично, но с 3 значениями.
 
 Параметры по имени
-- `startToMiddleEasing = Interpolation.LINEAR` - интерполяция от начального значения к среднему значению.
-- `middleToEndEasing = Interpolation.LINEAR` - интерполяция от среднего значения к конечному значению.
+- `startToMiddleEasing = Interpolation.LINEAR` - [интерполяция](../../common/util/interpolations) от начального значения к среднему значению.
+- `middleToEndEasing = Interpolation.LINEAR` - [интерполяция](../../common/util/interpolations) от среднего значения к конечному значению.
 
 ### Гравитация
 

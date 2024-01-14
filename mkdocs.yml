@@ -21,6 +21,7 @@ nav:
           - Персонажи:
               - Создание персонажа: scripting/story_events/npcs/creation.md
               - Настройка персонажа: scripting/story_events/npcs/settings.md
+              - Настройка модели персонажа: scripting/story_events/npcs/model_features.md
               - Перемещение и направление взгляда персонажа: scripting/story_events/npcs/moving.md
               - Возможности персонажей: scripting/story_events/npcs/capabilities.md
               - Анимирование персонажей: scripting/story_events/npcs/animations.md
@@ -39,6 +40,8 @@ nav:
           - Эффекты:
               - Частицы: scripting/story_events/effects/particles.md
       - Общее:
+          - Разное:
+              - Интерполяции: scripting/common/util/interpolations.md
           - Импорт скриптов: scripting/common/imports.md
   - Возможности:
       - Загрузчик ресурсов: features/resources.md
