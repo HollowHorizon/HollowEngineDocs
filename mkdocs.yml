@@ -33,6 +33,7 @@ nav:
               - Базовые возможности: scripting/story_events/dialogues/features.md
           - Катсцены:
               - Камера: scripting/story_events/cutscenes/camera.md
+              - Переходы: scripting/story_events/cutscenes/transitions.md
           - Список Событий:
               - scripting/story_events/event_list/event_list.md
           - Эффекты:
