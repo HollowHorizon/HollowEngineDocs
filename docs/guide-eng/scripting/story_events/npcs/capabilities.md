@@ -1,96 +1,94 @@
-# Действия для Персонажей
+# NPC Actions
 
-Есть довольно много разных действий, которые могут делать Персонажи. Основные из них представлены тут.
+There are quite a few different actions that NPCs can perform. The main ones are presented here.
 
-# Написать в чат от лица персонажа
+# Character Speech
 
-!!! note "Шаблон"
-	```kts
-	npc say { "Привет!" }
-	```
-
----
-
-## Действия с предметами
-
-### Выкинуть предмет(бросить)
-
-Персонаж может бросить указаный предмет по направлению взгляда, делается это так:
-
-!!! note "Шаблон"
-	```kts
-	npc dropItem { item("minecraft:apple") }
-	```
-	Предмет можно указать лёгким способом. Просто возьмите в основную руку нужный предмет и после пропишите команду `/hollowengine hand`, у вас скопируется данные о предмете вместе с количеством и nbt тегами.
-
-
-### Взять предмет в руку
-
-Персонаж может взять предмет в правую или левую руку.
-
-![NPC взял предмет в руку-2](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-give-item2.gif)
-
-!!! note "Шаблон"
-	Выдать предмет в правую руку:
-	```kts
-	npc giveRightHand { item("minecraft:apple") }
-	```
-	Выдать предмет в левую руку:
-	```kts
-	npc giveLeftHand { item("minecraft:apple") }
-	
-	```
-	Предмет можно указать лёгким способом. Просто возьмите в основную руку нужный предмет и после пропишите команду `/hollowengine hand`, у вас скопируется данные о предмете вместе с количеством и nbt тегами.
+!!!note "Template"
+```kts
+npc say { "Hello!" }
+```
 
 ---
 
-### Запросить предметы
+## Item Actions
 
-Вы можете дать задание принести что-нибудь персонажу.
+### Drop Item
 
-!!! note "Шаблон"
-	```kts
-	npc requestItems {
-		text = "А ну живо принёс мне эти предметы:" //сообщение при пкм по нпс. После него будет выведен список предметов.
-		+item("minecraft:apple")
-	}
-	```
-	Предмет можно указать лёгким способом. Просто возьмите в основную руку нужный предмет и после пропишите команду `/hollowengine hand`, у вас скопируется данные о предмете вместе с количеством и nbt тегами.
+The character can throw the specified item in the direction they are looking. It is done like this:
 
-## Взаимодействие с миром
+!!!note "Template"
+```kts
+npc dropItem { item("minecraft:apple") }
+```
+You can easily specify the item. Just take the item you need in your main hand and then use the command `/hollowengine hand`. The item data will be copied, including quantity and NBT tags.
 
-### Использовать блок
+### Hold Item
 
-Персонажи, в отличии от медных големов могут использовать не только кнопки, но и любые блоки на пкм :)
+The character can hold an item in their right or left hand.
 
-!!! note "Шаблон"
-	```kts
-	npc useBlock { pos(x, y, z) } // Взаимодействовать с блоком, который находится на координатах x, y, z
-	```
-	> `pos(x, y, z)` - Позиция блока, с которым нужно взаимодействовать. Можно получить блок на который Вы смотрите командой /hollowengine pos
+![NPC holds item in hand-2](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-give-item2.gif)
+
+!!!note "Template"
+Give the item to the right hand:
+```kts
+npc giveRightHand { item("minecraft:apple") }
+```
+Give the item to the left hand:
+```kts
+npc giveLeftHand { item("minecraft:apple") }
+```
+You can easily specify the item. Just take the item you need in your main hand and then use the command `/hollowengine hand`. The item data will be copied, including quantity and NBT tags.
 
 ---
 
-# Атаковать цель
+### Request Items
 
-Чтобы персонаж мог атаковать кого-то нужно этого кого-то ему указать.
+You can give a task to bring something to the NPC.
 
-!!! note "Шаблон"
-	Установить цель, сущность:
-	```kts
-	npc setTarget { entity }
-	```
-	Установить цель, другой персонаж:
-	```kts
-	npc1 setTarget npc2
-	```
-	Установить цель, команда:
-	```kts
-	npc setTargetTeam { team }
-	```
-	Сбросить цель:
-	```kts
-	npc setTarget { null }
-	```
+!!!note "Template"
+```kts
+npc requestItems {
+text = "Quickly brought me these items:" // Message when right-clicking on the NPC. After that, a list of items will be displayed.
++item("minecraft:apple")
+}
+```
+You can easily specify the item. Just take the item you need in your main hand and then use the command `/hollowengine hand`. The item data will be copied, including quantity and NBT tags.
+
+## Interaction with the World
+
+### Use Block
+
+Characters, unlike iron golems, can use not only buttons but also any blocks on right-click :)
+
+!!!note "Template"
+```kts
+npc useBlock { pos(x, y, z) } // Interact with the block located at coordinates x, y, z
+```
+> `pos(x, y, z)` - Block position to interact with. You can get the block you are looking at with the command /hollowengine pos
+
+---
+
+# Attack Target
+
+To attack someone, the NPC needs to be given someone to target.
+
+!!!note "Template"
+Set the target, entity:
+```kts
+npc setTarget { entity }
+```
+Set the target, another character:
+```kts
+npc1 setTarget npc2
+```
+Set the target, command:
+```kts
+npc setTargetTeam { team }
+```
+Reset the target:
+```kts
+npc setTarget { null }
+```
 
 ---

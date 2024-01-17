@@ -1,18 +1,18 @@
-# Список событий
+# Event List
 
-HollowEngine добавляет стандартный список событий, открывается нажатием кнопки `~` / `Ё`. Кнопку можно изменить в меню управления
+HollowEngine adds a standard event list, which opens by pressing the `~` / `Ё` key. You can change the key in the control menu.
 
-## Добавление события в список
+## Adding an Event to the List
 
-!!! note "Шаблон"
-	```kts
-	ProgressManager.addMessage { "Добудь 10 булыжника" }
-	```
+!!!note "Template"
+```kts
+ProgressManager.addMessage { "Get 10 cobblestones" }
+```
 
-## Удаления события из списка
+## Removing an Event from the List
 
-!!! note "Шаблон"
-	```kts
-	ProgressManager.removeMessage { "Добудь 10 булыжника" }
-	```
-	В данном случае необходимо написать ровно такое же сообщение, чтобы оно удалилось.
+!!!note "Template"
+```kts
+ProgressManager.removeMessage { "Get 10 cobblestones" }
+```
+In this case, you need to write exactly the same message to remove it.

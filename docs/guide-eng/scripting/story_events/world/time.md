@@ -1,19 +1,19 @@
-Вы можете останавливать и продолжать время!
+# You Can Pause and Resume Time(za warudo)!
 
-## Остановка времени
+## Stop Time
 
 ```kotlin
 pauseTime()
 ```
 
-## Продолжение времени
+## Resume Time
 
 ```kotlin
 resumeTime()
 ```
 
-## Установка времени
+## Set Time
 
 ```kotlin
-execute { "time set <тут ваше время>" }
+execute { "time set <your time here>" }
 ```

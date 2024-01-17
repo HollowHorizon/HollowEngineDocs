@@ -1,16 +1,16 @@
-# Настройка персонажа
+# NPC Configuration
 
-Помимо базовой настройки при спавне вы также можете в процессе скрипта менять разные параметры нпс, например: модель, текстуру, стандартные анимации, смещение, поворот и размеры.
+In addition to the basic configuration during spawn, you can also change various parameters of an NPC during the script, such as the model, texture, default animations, position, rotation, and sizes.
 
-!!! note "Шаблон"
-	```kts
-	npc configure {
-    	model = "hollowengine:models/entity/player_model.gltf" // Замена модели персонажа. Указывается в формате ResourceLocation
-    	animations[AnimationType.IDLE] = "animationName" // Замена стандартных анимаций персонажа. Названия всех анимаций можно посмотреть командой /hollowengine model <модель>
-    	textures["original_name"] = "hollowengine:textures/skins/my_skin.png" // Замена стандартной текстуры. Названия оригинальных текстур можно посмотреть командой /hollowengine model <модель>. Сами текстуры указываются в формате ResourceLocation.
-    	transform = Transform( //Параметры модели: перемещение, поворот и масштаб
-      		tX=1.5f //сдвинем нашу модель на 1.5 блока по x.
-    	)
-	}
-	```
-	Путь к модели указывается, в формате [ResourceLocation](../../../../features/resources).
+!!! note "Template"
+```kts
+npc configure {
+model = "hollowengine:models/entity/player_model.gltf" // Replace the NPC model. Specified in the ResourceLocation format.
+animations[AnimationType.IDLE] = "animationName" // Replace the default NPC animations. You can view the names of all animations with the command /hollowengine model <model>.
+textures["original_name"] = "hollowengine:textures/skins/my_skin.png" // Replace the default texture. You can view the names of the original textures with the command /hollowengine model <model>. The textures themselves are specified in the ResourceLocation format.
+transform = Transform( // NPC model parameters: translation, rotation, and scale
+tX=1.5f // Move our model 1.5 blocks along the x-axis.
+)
+}
+```
+The path to the model is specified in the [ResourceLocation](../../../../features/resources) format.

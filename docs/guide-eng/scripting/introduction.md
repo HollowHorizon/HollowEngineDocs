@@ -1,47 +1,47 @@
-# Скриптовой движок HollowEngine
+# HollowEngine Scripting Engine
 
-HollowEngine позволяет писать скрипты на языке [Kotlin](https://kotlinlang.org/), немного модифицированном для использования напрямую в игре без перезапусков. Сам язык немного отличается от привычного [Kotlin](https://kotlinlang.org/), например вам не обязательно создавать какие либо методы, здесь вы можете напрямую начать писать код, не заморачиваясь с созданием методов и классов. Однако никто вам не мешает создавать отдельные или вложенные в файл классы и методы и пользоваться ими в своём коде!
+HollowEngine allows you to write scripts in a slightly modified version of [Kotlin](https://kotlinlang.org/), tailored for in-game usage without the need for restarts. The language differs a bit from standard [Kotlin](https://kotlinlang.org/); for example, you don't have to create any methods. You can start writing code directly without worrying about creating methods and classes. However, you are free to create separate or nested classes and methods in your script files and use them in your code!
 
-## Как создать скрипт?
+## How to Create a Script?
 
-Прежде всего, перед написанием скриптов нужно определиться какой скрипт вам нужен. На данный момент есть 3 вида скриптов:
+First of all, before writing scripts, you need to decide what kind of script you need. Currently, there are three types of scripts:
 
 
-| Название | Тип | Примечание |
+| Name | Type | Note |
 | --- |--- | --- |
-| Мод | mod | Запускается, как и обычные моды во время загрузки игры. |
-| [Сюжетное Событие](story_events.md) | se | Запускается по команде уже в мире, либо же его можно запустить из mod-скрипта. |
-| Рецепт | content | Запускается при перезагрузке рецептов (и команде /reload соответственно) |
+| Mod | mod | Runs like regular mods during the game loading. |
+| [Story Event](story_events.md) | se | Runs on command in the world, or it can be triggered from a mod script. |
+| Recipe | content | Runs when reloading recipes (and the /reload command accordingly) |
 
-Когда вы определились с видом скрипта создайте текстовый файл в папке `.minecraft/hollowengine/scripts/`. <br>
-Также вы можете в этой же папке создать под-папки, например отдельно для Событий и отдельно для Крафтов, или же разделить все события по главам, чтобы было проще работать.
+Once you've decided on the script type, create a text file in the `.minecraft/hollowengine/scripts/` folder. <br>
+You can also create subfolders in this folder, for example, one for events and one for crafts, or divide all events into chapters to make it easier to work with.
 
-Файлы должны называться по шаблону: `<название>.<тип>.kts`, где: <br>
-・ `<название>`: Название самого скрипта. Рекомендуется называть скрипты маленькими буквами и без пробелов. (вместо них можно использовать символ: `_`) <br>
-・ `<тип>`: Ваш тип скрипта из таблицы. <br>
+Files should be named according to the pattern: `<name>.<type>.kts`, where: <br>
+・ `<name>`: The name of the script. It is recommended to name scripts in lowercase without spaces. (you can use the underscore `_` instead of spaces) <br>
+・ `<type>`: Your script type from the table. <br>
 
-## Что и как писать в скриптах?
+## What and How to Write in Scripts?
 
-У каждого скрипта есть свой набор стандартных методов и переменных, подробнее об этом расписано в разделе соответствующего типа скрипта.
+Each script has its own set of standard methods and variables. More details are explained in the section for each script type.
 
-!!! note "Примечание"
-    Чтобы избежать конфликтов с совпадающими именами скриптов стоит располагать их в разных папках, а в начале каждого скрипта приписать `package` с путём к этой папки относительно папки `scripts` (через точки, а не `/`), например: `package ru.hollowhorizon.my_super_modpack`.
+!!! note "Note"
+To avoid conflicts with script names, it is recommended to place them in different folders. At the beginning of each script, add a `package` statement with the path to this folder relative to the `scripts` folder (using dots, not `/`), for example: `package ru.hollowhorizon.my_super_modpack`.
 
-## Компиляция скриптов
+## Compiling Scripts
 
-!!! danger "Что делать если долго запускается или не запускается скрипт?"
-    После запуска скрипта командой или во время запуска игры скрипт будет скомпилирован, это может занимать от 5 секунд, до 3-5 минут в зависимости от размера скрипта, количества библиотек и импортов, а также производительности ПК. Если же даже спустя 3-5 минут ничего не произошло и нету никаких ошибок в чате, то скорее всего вы установили lite версию HollowCore. Проверьте правильность [установки](../../install) модов.
-    После первого запуска скрипты упаковываются в `jar` архив, что позволяет в дальнейшем запускать их почти моментально. Разумеется при изменении исходного скрипта компиляция будет произведена заново.
+!!! danger "What to do if the script takes a long time or doesn't run?"
+After running the script by command or during the game launch, the script will be compiled. This can take from 5 seconds to 3-5 minutes, depending on the script's size, the number of libraries and imports, and the PC's performance. If even after 3-5 minutes nothing happens and there are no errors in the chat, it is likely that you installed the lite version of HollowCore. Check the [installation](../../install) of mods.
+After the first run, scripts are packed into a `jar` archive, allowing them to be launched almost instantly later. Of course, when you change the source script, the compilation will be performed again.
 
-## IDE, Подсветка синтаксиса, авто-дополнение кода.
+## IDE, Syntax Highlighting, Code Autocompletion.
 
-При написании скриптов вы можете использовать любую IDE вроде VSCode, но вот **авто-дополнение кода** реализовать довольно сложно.
-Проще всего - создать форк репозитория HollowEngine на GitHub, для этого необходимо: <br>
-1. Клонировать репозиторий HollowEngine себе на ПК. <br>
-2. Собрать проект: <br>
-・ Дождаться настройки проекта и индексации <br>
-・ Перейти в меню gradle (на правой панели) и запустить: `HollowEngine -> Tasks -> forgegradle runs -> genIntellijRuns`. <br>
-・ Скомпилировать jar: `Tasks -> build -> jar`  <br>
-3. Запустить игру через задачу на панели справа вверху. <br>
+While writing scripts, you can use any IDE like VSCode, but implementing **code autocompletion** is quite complex.
+The easiest way is to fork the HollowEngine repository on GitHub. To do this: <br>
+1. Clone the HollowEngine repository to your PC. <br>
+2. Build the project: <br>
+   ・ Wait for the project to be configured and indexed. <br>
+   ・ Go to the gradle menu (on the right panel) and run: `HollowEngine -> Tasks -> forgegradle runs -> genIntellijRuns`. <br>
+   ・ Compile the jar: `Tasks -> build -> jar`  <br>
+3. Run the game through the task on the top right panel. <br>
 
-После чего можно создавать скрипты по пути: `run/hollowengine/scripts`, после создания скрипта будет ещё раз запущена индексация.
+After that, you can create scripts in the path: `run/hollowengine/scripts`. The indexing will be run again after creating the script.

@@ -1,68 +1,68 @@
-# Создание и спавн нпс
+# NPC Creation and Spawning
 
+## Creating a Character
 
-## Создание персонажа
+To create an NPC, you can use the following template:
 
-Для создания нпс есть следующий шаблон:
+!!!note "Template"
+```kts
+// Here we create a delegate variable through which we will access our character. The NPC will be spawned as soon as this code is called.
+val npc by NPCEntity.creating {
+name = "Vitalik" // NPC name
+model = "hollowengine:models/entity/player_model.gltf" // Path to the character model
+attributes = Attributes( // List of character attributes (health, speed, etc.) - just like in the /attribute command
+"minecraft:generic.max_health" to 100f // for example, health
+)
+size = 0.6f to 0.8f // NPC hitbox size (under development)
+showName = true // show the nickname with the NPC name
+transform = Transform( // Initial model parameters: translation, rotation, and scale
+tX=1.5f // shift our model by 1.5 blocks on the x-axis.
+)
+animations[AnimationType.IDLE] = "<newAnimationName>" // Replace the default animation with a custom one (the engine automatically detects standard animations by default)
+world = "minecraft:overworld" // dimension where to spawn the NPC
+pos = pos(x, y, z) // coordinates where to spawn the NPC
+}
+```
 
-!!! note "Шаблон"
-    ```kts
-    //Здесь мы создаём переменную-делегат, через которую будем обращаться к нашему персонажу. Сам нпс будет заспавлен сразу же как будет вызван этот участок кода.
-    val npc by NPCEntity.creating {
-        name = "Виталик" //Имя персонажа
-        model = "hollowengine:models/entity/player_model.gltf" //Путь к модели персонажа
-        attributes = Attributes( //список атрибутов персонажа (здоровье, скорость и т.п.) - всё как в команде /attribute
-            "minecraft:generic.max_health" to 100f, //к примеру здоровье
-        )
-        size = 0.6f to 0.8f //размеры хитбокса нпс (в разработке)
-        showName = true //показывать ли ник с именем над нпс
-        transform = Transform( //Начальные параметры модели: перемещение, поворот и масштаб
-            tX=1.5f //сдвинем нашу модель на 1.5 блока по x.
-        )
-        animations[AnimationType.IDLE] = "<newAnimationName>" // Замена стандартной анимации на свою (по умолчанию движок сам определяет стандартные анимации)
-        world = "minecraft:overworld" //измерение, гле спавнить нпс
-        pos = pos(x, y, z) //координаты где спавнить нпс
-    }
-    ```
+The path to the model is specified in [ResourceLocation](../../../../features/resources) format.
 
-Путь к модели указывается, в формате [ResourceLocation](../../../../features/resources).
+When this fragment is executed, an NPC will be created at the specified coordinates, or the one that already exists in the world will be taken. (in this case, it will not be moved to these coordinates)
 
-При выполнении данного фрагмента будет создан нпс на указанных координатах, либо взят тот, что уже есть в мире. (в этом случае он не будет перенесён на эти координаты)
-
-Далее используя эту переменную вы можете взаимодействовать с нпс в мире.
-
----
-
-### Случайный спавн
-
-!!! info "Заспавнить персонажа рядом с игроком"
-    Если вам нужно, чтобы персонаж заспавнился недалеко от случайного игрока команды, то вы можете воспользоваться этим методом для поиска случайной точки спавна
-    ```kts
-    pos = team.randomPos() //в скобках можно указать радиус, например 25f - для 25 блоков
-    ```
+Next, using this variable, you can interact with the NPC in the world.
 
 ---
 
-### Аттрибуты
+### Random Spawn
 
-!!! info "Все существующие аттрибуты, вы можете узнать через команду `/attribute <кому>`"
+!!!info "Spawn the character near a random player"
+If you need the character to spawn near a random player's command, you can use this method to find a random spawn point
+```kts
+pos = team.randomPos() //in brackets you can specify the radius, for example, 25f - for 25 blocks
+```
 
-    От вас лишь требуется указать, там где `attributes`, это:
+---
+
+### Attributes
+
+!!!info "You can find all existing attributes using the command `/attribute <target>`"
+
+    All you have to do is specify, where `attributes` is, this:
     
     ```kotlin
     Attributes("<attributeName>" to <float>)
     ```
-    > Обозначения: 
-    > - `attributeName` - название аттрибута.  
-    > - `float` - Дробное Число/Цифра, где в конце стоит `f`, пример: `10f`
+    > Designations: 
+    > - `attributeName` - the name of the attribute.
+    > - `float` - Floating point number/digit, ending with `f`, example: `10f`
 
 ---
 
-## Удаление персонажа
+## Deleting a Character
 
-Для удаления персонажа просто вызовите у него метод `despawn()`.
+To delete a character, simply call its `despawn()` method.
 
-!!! note "Шаблон"
-    ```kts
-    npc.despawn()
-    ```
+!!!note "Template"
+```kts
+npc.despawn()
+```
+---

@@ -1,114 +1,114 @@
-# Перемещение персонажа
+# NPC Movement
 
-Прежде всего персонаж может двигаться к разным целям:
+First of all, a character can move towards various targets:
 
-![NPC движется до точки](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-move.gif)
+![NPC moving to a point](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-move.gif)
 
-## Блок
+## Block
 
-В качестве цели можно указать блок.
+You can specify a block as the target.
 
-Если нужно чтобы персонаж пришёл к блоку и код продолжился, то пользуйтесь:
+If you want the character to come to the block, and the code to continue, use:
 ```kotlin
 npc moveToPos { pos(x, y, z) }
 ```
 
-Также есть вариант просто указать цель и персонаж будет стремиться туда всегда, пока ему не скажут остановиться:
+There is also an option to simply set a target, and the character will always strive there until told to stop:
 ```kotlin 
 npc setMovingPos { pos(x, y, z) }
 ```
 
-И соответственно, чтобы остановиться, просто укажите пустую цель:
+And, of course, to stop, simply specify an empty target:
 ```kotlin 
 npc setMovingPos { null }
 ```
 
-## Сущность / Моб
+## Entity / Mob
 
-В качестве цели можно указать какого-нибудь моба, игрока, или например другого персонажа.
+You can specify a mob, player, or another character as the target.
 
-Если нужно чтобы персонаж пришёл к другому персонажу использовать фигурные скобки не следует:
+If you want the character to come to another character, you shouldn't use curly braces:
 ```kotlin
 npc1 moveToEntity npc2
 ```
-А для моба соответственно стоит:
+And for a mob, it would be:
 ```kotlin
 npc1 moveToEntity { entity }
 ```
 
-Аналогично, можно указать и постоянную цель или `null`:
+Similarly, you can specify a permanent target or `null`:
 ```kotlin 
-npc1 setMovingEntity npc2 //персонаж
+npc1 setMovingEntity npc2 //character
 
-npc setMovingEntity { entity } //моб
+npc setMovingEntity { entity } //mob
 
-npc setMovingEntity { null } //ничего
+npc setMovingEntity { null } //nothing
 ```
 
-## Команда игроков
+## Player Team
 
-При этом методе будет выбран ближайший игрок команды и персонаж будет следовать за ним.
+In this method, the nearest player of the team will be selected, and the character will follow them.
 
-Соответственно для одноразового действия нужно писать:
+For a one-time action, you should write:
 ```kotlin
 npc1 moveToTeam { team }
 ```
 
-А для постоянного следования:
+And for permanent following:
 ```kotlin
-npc setMovingTeam { team } //следовать
+npc setMovingTeam { team } //follow
 
-npc setMovingTeam { null } //перестать следовать
+npc setMovingTeam { null } //stop following
 ```
 
-# Направление взгляда персонажа
+# NPC View Direction
 
-Персонажу можно сказать смотреть на какой либо объект. Аналогично предыдущим случаям есть команды для постоянного вгляда или одиночной задачи.
+You can tell the character to look at a particular object. Similarly to the previous cases, there are commands for permanent focus or a one-time task.
 
-![NPC смотрит в точку](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-look.gif)
+![NPC looking at a point](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-look.gif)
 
-## Блок
+## Block
 
-Одноразовая задача:
+One-time task:
 ```kotlin
 npc lookAtPos { pos(x, y, z) }
 ```
 
-Постоянная задача:
+Permanent task:
 ```kotlin
-npc setLookingPos { pos(x, y, z) } //начать смотреть 
+npc setLookingPos { pos(x, y, z) } //start looking 
 
-npc setLookingPos { null } //перестать смотреть 
+npc setLookingPos { null } //stop looking 
 ```
 
-## Сущность / Моб
+## Entity / Mob
 
-Одноразовая задача:
+One-time task:
 ```kotlin
-npc1 lookAtEntity npc2 //для персонажей
+npc1 lookAtEntity npc2 //for characters
 
-npc lookAtEntity { entity } //для других сущностей
+npc lookAtEntity { entity } //for other entities
 ```
 
-Постоянная задача:
+Permanent task:
 ```kotlin
-npc1 setLookingEntity npc2 //начать смотреть на персонажа 
+npc1 setLookingEntity npc2 //start looking at an npc 
 
-npc setLookingEntity { entity } //начать смотреть на моба
+npc setLookingEntity { entity } //start looking at an entity
 
-npc setLookingEntity { null } //перестать смотреть 
+npc setLookingEntity { null } //stop looking 
 ```
 
-## Команда игроков
+## Player Team
 
-Одноразовая задача:
+One-time task:
 ```kotlin
 npc lookAtTeam { team }
 ```
 
-Постоянная задача:
+Permanent task:
 ```kotlin
-npc setLookingTeam { team } //начать смотреть 
+npc setLookingTeam { team } //start looking 
 
-npc setLookingTeam { null } //перестать смотреть 
+npc setLookingTeam { null } //stop looking 
 ```

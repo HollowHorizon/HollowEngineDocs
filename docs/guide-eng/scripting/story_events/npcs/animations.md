@@ -1,48 +1,46 @@
-# Анимации персонажей
+# Character Animations
 
-Прежде всего есть 2 основных режима анимаций: Одиночный и Зацикленный.
-Названия анимаций можно узнать командой `/hollowengine model <путь к модели>` (подсказки присутствуют)
+First of all, there are 2 main animation modes: Single and Looping.
+You can find the names of animations using the command `/hollowengine model <model path>` (hints are available).
 
-## Одиночные анимации
+## Single Animations
 
-Чтобы воспроизвести анимацию 1 раз достаточно простой команды.
+To play an animation once, a simple command is enough.
 
-!!! note "Шаблон"
+!!!note "Template"
+```kotlin
+npc playOnce { "animationName" }
+```
 
-    ```kotlin
-    npc playOnce { "animationName" }
-    ```
+## Looping Animations
 
-## Зацикленные анимации
+### Start
 
-### Запуск
+!!!note "Plays a looping animation (infinitely) | Template"
+```kotlin
+npc playLooped { "animationName" }
+```
 
-!!! note "Воспроизводит зацикленную анимацию (бесконечно) | Шаблон"
+### Stop
 
-    ```kotlin
-    npc playLooped { "animationName" }
-    ```
+!!!note "Stops playing a looping animation | Template"
+```kotlin
+npc stop { "animationName" }
+```
 
-### Остановка
+## Animation Configuration
 
-!!! note "Останавливает воспроизведение зацикленную анимацию | Шаблон"
+If these settings are not enough for you or the animation is not playing as you want, you probably need this mode:
 
-    ```kotlin
-    npc stop { "animationName" }
-    ```
+!!!note "Fine-tune animation playback | Templates"
+```kotlin
+npc play {
+animation = "animationName" // Animation name
+layerMode = LayerMode.ADD // Animation layering mode. Options: ADD - add another animation to the current position. OVERWRITE - completely overwrite other animations.
+playType = PlayMode.ONCE // Animation playback mode. Options: ONCE - once, LOOPED - in a loop, LAST_FRAME - stop on the last frame, REVERSED - in a loop, but in reverse after completion.
+speed = 1f // Animation speed
+}
+```
 
-## Настройка анимаций
-
-Если вам этих настроек недостаточно или анимация воспроизводится не так, как вы хотите, то скорее всего вам нужен этот режим:
-
-!!! note "Настрой воспроизведение анимации детально | Шаблоны"
-    ```kotlin
-    npc play {
-        animation = "animationName" // Название анимации
-        layerMode = LayerMode.ADD // Режим сложения анимаций. Есть: ADD - добавить к текущему положению ещё анимацию. OVERWRITE - полностью перезаписать другие анимации.
-        playType = PlayMode.ONCE // Режим проигрывания анимаций. Есть: ONCE - 1 раз, LOOPED - в цикле, LAST_FRAME - остановиться на последнем кадре, REVERSED - в цикле, но после завершения в обратную сторону
-        speed = 1f // Скорость анимации
-    }
-    ``` 
 
 ---

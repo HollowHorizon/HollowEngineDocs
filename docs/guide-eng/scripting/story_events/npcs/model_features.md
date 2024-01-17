@@ -1,13 +1,13 @@
-# Настройка моделей персонажей
+# Configuring Character Models
 
-В данном разделе написано конкретно про настройку модели в BlockBench/Blender, не скрипта.
+In this section, we specifically cover configuring the model in BlockBench/Blender, not the script.
 
-## Поддержка предметов в руках
+## Support for Items in Hands
 
-Чтобы у модели персонажа отображались предметы в руках добавьте в нужных вам местах группы / кости с соответствующими названиями:
-> - `RightHandItem` - Для правой руки.
-> - `LeftHandItem` - Для левой руки.
+To display items in the hands of the character model, add groups/bones with the corresponding names in the desired locations:
+> - `RightHandItem` - For the right hand.
+> - `LeftHandItem` - For the left hand.
 
-Так же вы можете таким образом анимировать предметы анимациях, вроде битв на мечах или доставания предметов из карманов.
+You can also use this method to animate items in animations, such as sword battles or taking items out of pockets.
 
 ---

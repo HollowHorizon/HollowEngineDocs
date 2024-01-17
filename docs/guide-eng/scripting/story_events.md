@@ -1,59 +1,61 @@
-# Сюжетные События
+# Story Events
 
-В HollowEngine Вы можете довольно удобно и быстро создавать различные события с npc, катсцены, диалоги и т.п.
+In HollowEngine, you can conveniently and quickly create various events with NPCs, cutscenes, dialogues, etc.
 
-!!! danger "Важное"
-    Данный вид скрипта имеет множетсво своих нюансов и очень отличается от стандартного программирования. Не рекомендуется для новичков не знакомых с программированием и тех, кто не разбирается, как работают лямбда-выражения, переменные-делегаты и машины состояний.
+!!! danger "Important"
+This type of script has many nuances and differs significantly from standard programming. It is not recommended for beginners unfamiliar with programming and those who do not understand how lambda expressions, delegate variables, and state machines work.
 
-## Как оно работает?
+## How It Works?
 
-Прежде всего нужно понимать, что такое `Сюжетное событие`, из чего оно состоит и для кого оно выполняется.
+First, you need to understand what a `Story Event` is, what it consists of, and who it is executed for.
 
-### Основное
+### Basics
 
-Итак, для начала стоит запомнить, что все сюжетные события выполняются не для одного игрока, а для целой *команды*. И не важно, делаете вы сюжет для одного игрока или нет. Это не повод писать менее качественный код. Команду можно получить через переменную `team`.
+To begin with, remember that all story events are executed not for a single player but for a whole *team*. Whether you are creating a story for one player or not, it is not an excuse to write lower-quality code. You can obtain the team through the `team` variable.
 
-Само событие представляет собой список разных команд, например:
+The story event itself is a list of various commands. For example:
 
-1) Cоздать нпс по имени Виталик по координатам `x, y, z` с моделью `model.gltf`. 
-2) Дать нпс задачи ийти к координатам `x1, y1, z1`. Ждать пока нпс не дойдёт до нужной точки
-3) Написать всем игрокам команды сообщение "\[Незнакомец\] помогите, я заблудился..." в чат.
+1) Create an NPC named Vitalik at coordinates `x, y, z` with the model `model.gltf`.
+2) Give the NPC tasks to go to the coordinates `x1, y1, z1`. Wait until the NPC reaches the required point.
+3) Write a message to the chat for all players in the team: "\[Stranger\] Help, I'm lost..."
 
-Каждая из этих команд называется **узлов**, а всё событие представляет собой связный граф из этих самых узлов. Некоторые узлы могут иметь внутри себя другие узлы, например *циклы*, где узел один, но он содержит другие узлы, которые могут повторяться. Или же *ветвления*, где тоже узел один, но имеет в себе 1 условие и 2 ветки.
+Each of these commands is called a **node**, and the entire event represents a connected graph of these nodes. Some nodes may contain other nodes, for example, *loops*, where there is only one node but it contains other nodes that can repeat. Or *branches*, where there is also only one node, but it has 1 condition and 2 branches.
 
-Событие имеет в себе множество стандартных узлов, в которых уже прописана вся логика, а также реализовано сохранение данных каждого из таких узлов. Но если вы собираетесь идти дальше, чем просто потыкать стандартные механики, то вам придётся разбираться, как создавать свои узлы, а также как сохранять их данные.
+The event has many standard nodes, in which the entire logic is already written, and the data for each of these nodes is saved. But if you plan to go beyond just clicking on standard mechanics, you will need to understand how to create your nodes and how to save their data.
 
-### Стадии скрипта
+### Script Stages
 
-Сюжетный Скрипт имеет 2 стадии: <br>
-1) Загрузка скрипта <br>
-> В этой стадии вызываются все методы создания узлов, т.е. всё что вы пишите в скрипте будет сначала загружено в машину состояний, которая и будет обслуживать ваше события и отвечать за его сохранение и обработку ошибок. <br>
-2) Исполнение скрипта <br>
-> В этой стадии ваш скрипт уже выполнен, и происходит обслуживание самих узлов игрой. Т.е. прохождение самого сюжета. <br>
+A Story Event has 2 stages: <br>
+1) Script loading <br>
+> At this stage, all methods for creating nodes are called. In other words, everything you write in the script will be first loaded into the state machine, which will serve your events and take care of saving and handling errors. <br>
+2) Script execution <br>
+> At this stage, your script is already executed, and the nodes themselves are serviced by the game. That is, passing through the story itself takes place.
 
-### Методы
+### Methods
 
-Практически каждый метод, что вы будете писать в скрипте скорее всего будет не выполнять своё действие, а лишь загружать соответствующий *узел* в машину состояний или создавать новые списки узлов, как циклы, ветвления или диалоги. Например представим метод `createCoolNpc()` будет не создавать нпс, как не странно, а загружать узел `CoolNpcCreationNode` в машину состояний.
+Almost every method you write in the script will most likely not perform its action but rather load the corresponding *node* into the state machine or create new lists of nodes, such as loops, branches, or dialogs. For example, suppose the method `createCoolNpc()` will not create an NPC, surprisingly, but will load the `CoolNpcCreationNode` node into the state machine.
 
-### Переменные
+### Variables
 
-Практически все переменные вам придётся получать через делегаты, потому что делегаты получают значение только при обращении к переменной, а не при её создании, также делегируемые переменные возможно сохранять при остановке игры или передавать между разными скриптами. А как вы знаете, скрипт состоит из узлов, т.е. по сути переменная предстваляет собой 2 вида узлов:
-1) Создать значение определённого типа
-2) Записать значение
-3) Получить значение
+Almost all variables will need to be obtained through delegates because delegates get the value only when accessing the variable, not when creating it. Also, delegated variables can be saved when the game stops or passed between different scripts. As you know, the script consists of nodes, so essentially, a variable represents two types of nodes:
+1) Create a value of a certain type.
+2) Write a value.
+3) Get a value.
 
-Например:
+For example:
 ```kotlin
-var reputation by saveable { 0 } //Создать значение определённого типа
+var reputation by saveable { 0 } //Create a value of a certain type
 
-npc say { "Твоя репутация: $reputation" } //Получить значение
+npc say { "Your reputation: $reputation" } //Get a value
 
-//используется метод next с лямбдой, чтобы выполнить это действие уже во время выполнения сюжета, а не при его загрузке в машину состояний. В случае с методом выше, это действие уже запускается во время выполнения сюжета, так что next - не требуется.
-next { reputation++ } //Записать значение
+// Use the `next` method with a lambda to perform this action during the script execution, not during its loading into the state machine. In the case of the method above, this action is already launched during the script execution, so `next` is not required.
+next { reputation++ } //Write a value
 ```
 
-## Как запускать события?
+## How to Launch Events?
 
-Для запуска событий есть команда `/hollowengine start-script <цель> <файл>`. Учтите, цель скрипта - не игрок, которого вы укажете, а **его команда**.
+To launch events, use the command `/hollowengine start-script <target> <file>`. Note that the target of the script is not the player you specify but **their team command**.
 
-Если же вам нужно, чтобы скрипт запускался вместе с первым входом игрока, то добавьте в его начала аннотацию: `@file:EntryPoint`, чтобы указать движку, что этот скрипт нужно запускать для каждого нового игрока.
+
+
+If you need the script to be launched together with the player's first entry, add the annotation: `@file:EntryPoint`, at the beginning of the script to tell the engine to run this script for each new player.
