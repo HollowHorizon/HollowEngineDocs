@@ -46,6 +46,8 @@ nav:
   - Возможности:
       - Загрузчик ресурсов: features/resources.md
       - Измерение рассказчика: features/dimension.md
+  - TestFileClass:
+      - TestFile: en/test.md
 
 theme:
   name: material
