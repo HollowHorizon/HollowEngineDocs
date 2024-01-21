@@ -2,7 +2,7 @@
 
 Прежде всего персонаж может двигаться к разным целям:
 
-![NPC движется до точки](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-move.gif)
+![NPC движется до точки](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/.resourses/npc-moveToPos.gif)
 
 ## Блок
 
@@ -65,7 +65,7 @@ npc setMovingTeam { null } //перестать следовать
 
 Персонажу можно сказать смотреть на какой либо объект. Аналогично предыдущим случаям есть команды для постоянного вгляда или одиночной задачи.
 
-![NPC смотрит в точку](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/hollowengine-guide/.resourses/npc-look.gif)
+![NPC смотрит в точку](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/.resourses/npc-lookAtPos.gif)
 
 ## Блок
 
