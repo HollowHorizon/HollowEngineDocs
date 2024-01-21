@@ -28,8 +28,8 @@ particles {
 ### Случайное смещение
 
 - `randomOffset(x: Double, y: Double, z: Double)` - случайное смещение по трём осям от 0 до указанного.
-- `randomMotion(horizontalSpeed: Float, verticalSpeed: Float)` - случайное смещение по горизонтали и вертикали.
-- `randomMotion(speed: Float)` - случайное смещение сразу по трём осям координат.
+- `randomMotion(horizontalSpeed: Double, verticalSpeed: Double)` - случайное смещение по горизонтали и вертикали.
+- `randomMotion(speed: Double)` - случайное смещение сразу по трём осям координат.
 
 ### Поворот
 
