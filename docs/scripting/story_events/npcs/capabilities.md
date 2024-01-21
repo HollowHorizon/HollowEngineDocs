@@ -28,7 +28,7 @@
 
 Персонаж может взять предмет в правую или левую руку.
 
-![NPC взял предмет в руку-2](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/.resourses/npc-giveHandItems.gif)
+![NPC взял предмет в руку-2](https://raw.githubusercontent.com/HollowHorizon/HollowEngineDocs/main/docs/.resourses/npc-giveHandsItems.gif)
 
 !!! note "Шаблон"
 	Выдать предмет в правую руку:
